@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="j5ZmpRp6-ZeLuTr-M8DbzuULJBChS9HBV_7bDVQt9u4" />
+    <title>Contact</title>
+
+    <link rel="icon" type="image/x-icon" href="./res/icons/favicon.ico">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- Scripting -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/df18b2a205.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="custom__cursor__outer"></div>
+    <div class="custom__cursor__inner"></div>
+    <div class="wrapper">
+        <nav class="mt-4">
+            <div class="mx-auto">
+                <div class="flex">
+                    <div class="flex wrapper justify-between px-4 py-4">
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="index.html" class="caption py-4 px-2"><span>Work</span></a>
+                            <a href="about.html" class="caption py-4 px-2"><span>About</span></a>
+                            <a href="contact.html" class="caption py-4 px-2"><span>Contact</span></a>
+                        </div>
+
+                        <!-- Primary Navbar items -->
+                        <div class="md:flex items-center space-x-1">
+                            <a href="index.html" class="flex items-center">
+                                <img src="./res/icons/logo.svg" alt="" draggable="false">
+                            </a>
+                        </div>
+
+                        <div class="hidden md:flex items-center">
+                            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                                <ul class="flex items-center">
+                                    <a class="ml-5 " href="https://www.behance.net/uxrishu" target="_blank">
+                                        <span class=" text-xl"><i class="fa-brands fa-behance"></i></span>
+                                    </a>
+                                    <a class="ml-5 " href="https://www.linkedin.com/in/uxrishu/" target="_blank">
+                                        <span class="text-xl"><i class="fa-brands fa-linkedin-in"></i> </span>
+                                    </a>
+                                    <a class="ml-5 " href="https://github.com/uxrishu" target="_blank">
+                                        <span class=" text-xl"><i class="fa-brands fa-github"></i></span>
+                                    </a>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center py-4 px-4">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-10 h-12" style="color: #121117;" x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <ul class="px-5 mobile-nav-items">
+                    <li class="active"><a href="index.html" class="caption m-2">Work</a></li>
+                    <li><a href="about.html" class="caption m-2 transition duration-300">About</a></li>
+                    <li><a href="contact.html" class="caption m-2 transition duration-300">Contact</a></li>
+                    <li><a href="https://www.behance.net/uxrishu" target="_blank"
+                            class="caption m-2 transition duration-300">Behance
+                            <i class="fa-solid fa-up-right-from-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uxrishu/" target="_blank"
+                            class="caption m-2 transition duration-300">Linkedin <i
+                                class="fa-solid fa-up-right-from-square"></i></a></li>
+                    <li><a href="https://github.com/uxrishu" target="_blank"
+                            class="caption m-2 transition duration-300">Github <i
+                                class="fa-solid fa-up-right-from-square"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="body-font">
+            <div class="sm:mt-2 mx-auto flex px-5 py-10 md:flex-row flex-col items-center justify-between">
+                <div class="lg:flex-grow lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1 class="big-title w-full">Let's work on a mission together, Drop your message!</h1>
+                    <div class="mt-8 lg:ml-3 md:ml-3 sm:ml-0">
+                        <a href="mailto: uxrishu@gmail.com" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="lg:max-w-lg lg:w-full">
+                    <img class="object-cover object-center rounded heroImg" id="mainImg" src="./res/images/heroImg02.svg" alt="hero"
+                        draggable="false">
+                </div>
+            </div>
+        </section>
+
+        <script src="./script/script.js"></script>
+</body>
+
+</html>

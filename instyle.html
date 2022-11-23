@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="j5ZmpRp6-ZeLuTr-M8DbzuULJBChS9HBV_7bDVQt9u4" />
+    <title>Instyle Case Study</title>
+
+    <link rel="icon" type="image/x-icon" href="./res/icons/favicon.ico">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- Scripting -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/df18b2a205.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="custom__cursor__outer"></div>
+    <div class="custom__cursor__inner"></div>
+    <div class="wrapper">
+        <nav class="mt-4">
+            <div class="mx-auto">
+                <div class="flex">
+                    <div class="flex wrapper justify-between px-4 py-4">
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="index.html" class="caption py-4 px-2"><span>Work</span></a>
+                            <a href="about.html" class="caption py-4 px-2"><span>About</span></a>
+                            <a href="contact.html" class="caption py-4 px-2"><span>Contact</span></a>
+                        </div>
+
+                        <!-- Primary Navbar items -->
+                        <div class="md:flex items-center space-x-1">
+                            <a href="index.html" class="flex items-center">
+                                <img src="./res/icons/logo.svg" alt="" draggable="false">
+                            </a>
+                        </div>
+
+                        <div class="hidden md:flex items-center">
+                            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                                <ul class="flex items-center">
+                                    <a class="ml-5 " href="https://www.behance.net/uxrishu" target="_blank">
+                                        <span class=" text-xl"><i class="fa-brands fa-behance"></i></span>
+                                    </a>
+                                    <a class="ml-5 " href="https://www.linkedin.com/in/uxrishu/" target="_blank">
+                                        <span class="text-xl"><i class="fa-brands fa-linkedin-in"></i> </span>
+                                    </a>
+                                    <a class="ml-5 " href="https://github.com/uxrishu" target="_blank">
+                                        <span class=" text-xl"><i class="fa-brands fa-github"></i></span>
+                                    </a>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center py-4 px-4">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-10 h-12" style="color: #121117;" x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <ul class="px-5 mobile-nav-items">
+                    <li class="active"><a href="index.html" class="caption m-2">Work</a></li>
+                    <li><a href="about.html" class="caption m-2 transition duration-300">About</a></li>
+                    <li><a href="contact.html" class="caption m-2 transition duration-300">Contact</a></li>
+                    <li><a href="https://www.behance.net/uxrishu" target="_blank"
+                            class="caption m-2 transition duration-300">Behance
+                            <i class="fa-solid fa-up-right-from-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uxrishu/" target="_blank"
+                            class="caption m-2 transition duration-300">Linkedin <i
+                                class="fa-solid fa-up-right-from-square"></i></a></li>
+                    <li><a href="https://github.com/uxrishu" target="_blank"
+                            class="caption m-2 transition duration-300">Github <i
+                                class="fa-solid fa-up-right-from-square"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="wrapper body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-10">
+                    <h2 class="caption mb-1 opacity-40">UX design | 2021</h2>
+                    <h1 class="big-title mb-4">Instyle App</h1>
+                    <p class="lg:w-2/4 mx-auto subtitle">A UX Design Project that focuses on people’s needs who are
+                        tired of sitting and waiting at the salons for their turn. | Scheduling App.
+                    </p>
+                </div>
+                <img class="w-full mx-auto mt-12 mb-4" src="./res/casestudies/instyle/coverimg.svg" alt="Instyle Case Study image">
+
+                <div class="mt-4 lg:mb-10 sm:mb-2 flex flex-wrap justify-between lg:px-8 sm:px-4 py-6">
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full">
+                        <h2 class="title mb-2 yellow">Overview</h2>
+                        <p class="leading-relaxed subtitle mb-4">This case study aims to understand the people’s needs
+                            and frustration when they went to the Salon for grooming. In India, people often like to go
+                            to Salons on the weekend, where they see many people sitting and waiting for their turn.
+                        </p>
+                    </div>
+
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full">
+                        <h2 class="title yellow invisible">Overview</h2>
+                        <p class="leading-relaxed subtitle mb-4 leading-relaxed">
+                            This process is very time taken and overwhelming for some people. It’s a detailed
+                            run-through of how I provided the relevant solutions to the people to save their time and
+                            only spend as much time as needed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-4 lg:mb-10 sm:mb-2 flex flex-wrap justify-between lg:px-8 sm:px-4 lg:lg:py-6 sm:py-0 sm:py-0">
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full">
+                        <h2 class="title mb-2 yellow">My Role</h2>
+                        <p class="leading-relaxed subtitle mb-4 leading-relaxed">
+                            <b>Role: </b>UX Researcher & UX Designer<br>
+                            <b>Responsibility: </b>Conducting Surveys, Primary Research, Digital Wireframe, and Final
+                            Prototype.<br>
+                            <b>Timeline: </b>November 2021 — February 2022
+                        </p>
+                    </div>
+
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full">
+                        <h2 class="title mb-2 yellow">Problem Statement</h2>
+                        <p class="leading-relaxed subtitle mb-4">A Scheduling app wants to help people to save their
+                            time by booking appointments in a nearby Salon from Home. As a Sole UX Designer, my goal is
+                            to empathize with people and understand their needs, behavior, and frustration of people to
+                            build a seamless happy user experience.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-4 lg:mb-10 sm:mb-2 flex flex-wrap justify-between lg:px-8 sm:px-4 lg:py-6 sm:py-0">
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full">
+                        <h2 class="title mb-2 yellow">Conducting The Research</h2>
+                        <p class="leading-relaxed subtitle mb-4 leading-relaxed">
+                            I planned to survey to help to identify
+                            what people face in the Salons. <br><br>
+                            <b>Why Survey?</b><br>Surveys give us the power to ask any questions (related to the study)
+                            without taking more time from the people. Surveys can be a quick, easy, and inexpensive way
+                            to obtain the data questions you ask.
+                        </p>
+                    </div>
+
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full ">
+                        <h2 class="title mb-2 yellow">Goal of the Survey</h2>
+                        <p class="leading-relaxed subtitle mb-4">
+                            The goal of the Survey is to find out how many people are facing this problem in the Salon
+                            or Barber Shop, and To identify what other issues people might have face and Do they
+                            actually need
+                            the solutions to this problem?
+                        </p>
+                    </div>
+                </div>
+
+                <img class="lg:w-1/2 sm:w-full mx-auto mt-12 mb-4" src="./res/casestudies/instyle/surveyresult.png"
+                    alt="Instyle Case Study image">
+
+                <div class="mt-4 lg:mb-10 sm:mb-2 flex flex-wrap justify-between lg:px-8 sm:px-4 lg:py-6 sm:py-0">
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full ">
+                        <h2 class="title mb-2 yellow">Understanding the Problem Statement</h2>
+                        <p class="leading-relaxed subtitle mb-4">To understand the problem statement more clearly, I
+                            framed 5Ws — Who, What, Where, When, Why. <br>
+                            <b> Who is experiencing the problem?</b><br>Knowing users and their backgrounds is key to
+                            creating
+                            successful solutions for them.<br><br>
+                            <b>What are the pain points that need to be solved?</b><br> Determine a user’s pain points
+                            early allow
+                            me to ensure and clarify the context of the pain points.<br><br>
+                            <b>Where do we need to focus the most?</b><br>Focusing on providing valuable features for
+                            the user
+                            that helps to solve this problem.<br>
+
+                        </p>
+                    </div>
+
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full lg:px-8 sm:px-0 lg:py-6 sm:py-0">
+                        <h2 class="title mb-2 yellow invisible"></h2>
+                        <p class="leading-relaxed subtitle mb-4"><b>When does the problem occur?</b><br>Knowing when the
+                            problem occurs can help to better empathize
+                            with users.<br><br>
+                            <b>Why is the problem important to solve?</b><br>According to the data, Most of the people
+                            spend their time waiting
+                            and sitting meaningless. An App that helps you to book and schedule an appointment will not
+                            only saves time for users but providing users to choose desired time to book.
+                        </p>
+                    </div>
+                </div>
+
+                <img class="lg:w-3/4 md:w-3/4 mx-auto sm:w-1/2 mb-2 lg:px-8 sm:px-4 lg:py-6 sm:py-0" src="./res/casestudies/instyle/persona.png" alt="Instyle Case Study image">
+                <div class="md:m-4 lg:m-4 sm:m-0 lg:mb-10 sm:mb-2 flex flex-wrap justify-between lg:px-8 sm:px-4 lg:py-6 sm:py-0">
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full ">
+                        <h2 class="title mb-2 yellow">Understanding the Users</h2>
+                        <p class="leading-relaxed subtitle mb-4">After receiving insights from the survey, I created
+                            personas so I could understand more potential needs, frustration, and goals of people to
+                            help decide on the functional requirements for Instyle app.
+                        </p>
+                    </div>
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full">
+                        <h2 class="title mb-2 yellow">Pain Points and Features to Solve Pain</h2>
+                        <p class="leading-relaxed subtitle mb-4">
+                            I found three major pain points of the user from the persona I created and To resolve user
+                            pain points here are the three main features that’ll help users to cut out pain points.<br>
+
+                            <ul class="list-disc">
+                                <b>Pain Points</b>
+                                <li><b>Time:</b> People don’t know about the opening and closing times of the Salon.
+                                </li>
+                                <li><b>Location:</b> People who move into a new city don’t know about the Shop Location.
+                                </li>
+                                <li><b>Waiting:</b> The User doesn’t want to wait for 30–40 minutes in the salon.</li>
+                            </ul>
+                            <br>
+                            <ul class="list-disc">
+                                <b>Features & Functionalities</b>
+                                <li><b>Time:</b> Providing the feature of opening and closing time of every shop.</li>
+                                <li><b>Location:</b> People can read about the specific landmarks near the Salon.</li>
+                                <li><b>Waiting:</b> Advance Booking that’ll help users to book appointments before.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                
+                <img class="w-full mx-auto mt-12 mb-4" src="./res/casestudies/instyle/ideationwallpaper.png"
+                    alt="Instyle Case Study image">
+
+                <div class="flex xl:w-full lg:w-full md:w-full sm:w-full flex-wrap lg:px-8 sm:px-4 lg:py-6 sm:py-0">
+                    <div class="lg:w-1/2 md:w-1/2 sm:w-full">
+                        <h2 class="title mb-2 yellow">Ideation</h2>
+                        <p class="leading-relaxed subtitle mb-4">
+                            In this ideation phase, I focused on preparing Information Architecture to help users
+                            understand where they are in the product and where they can get relevant information
+                            about a
+                            task. <br><br>
+                            <b>Why Information Architecture is important?</b><br>Because it provides a high-level
+                            view of a product and organizes the overall structure of the app which helps users to
+                            quickly and easily identify how to book appointment.
+                        </p>
+                    </div>
+                    <img class="p-4 md:w-1/2 sm:w-1/2 mb-2" src="./res/casestudies/instyle/ideation.png"
+                        alt="Instyle Case Study image">
+                </div>
+
+                <img class="w-full mx-auto mt-12 mb-4" src="./res/casestudies/instyle/wireframes.png"
+                    alt="Instyle Case Study image">
+                
+                <h1 class="title w-full mx-auto text-center justify-center lg:mt-16 md:mt-10 sm:mt-4 mb-2">High Fidelity Mockups</h1>
+                <img class="w-3/4 mx-auto mt-12 mb-4" src="./res/casestudies/instyle/solvedui1.svg" alt="Instyle Case Study image">
+
+                <div class="mt-4 lg:mb-10 sm:mb-2 flex flex-wrap justify-between lg:px-8 sm:px-4 lg:py-6 sm:py-0">
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full p-4">
+                        <h2 class="title mb-2 yellow">Home & Salon Screens</h2>
+                        <p class="leading-relaxed subtitle mb-4">After completing all basic signup and onboarding
+                            processes, the user comes to the Home screen which looks like this. The mobile app will
+                            automatically ask users for their location so they can see their nearby available
+                            salons.<br><br>I
+                            designed a carousel for grooming tips and festive discounts. Then I designed a
+                            Call-To-Action button for booking the appointment. When users open a Salon Catalogue where
+                            they can see services and their prices with approx. time taken offered by a particular Salon
+                        </p>
+                    </div>
+
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full problem-solved p-4">
+                        <h2 class="title mb-2">Problem Solved</h2>
+                        <p class="leading-relaxed subtitle mb-4">On the home page, Users have multiple options to
+                            book an appointment. After allowing the location detection, they can see their nearby
+                            salons. <br><br>
+                            On the Salon catalog page, Users can see the Salon opening and closing times and the
+                            information about the services including the price and approx time taken by a barber.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-12 lg:mb-10 sm:mb-2 flex flex-wrap justify-between">
+                    <img class="w-1/2 mx-auto mt-12 mb-4" src="./res/casestudies/instyle/solvedui4.svg"
+                        alt="Instyle Case Study image">
+                    <img class="w-1/2 mx-auto mt-12 mb-4" src="./res/casestudies/instyle/solvedui3.svg"
+                        alt="Instyle Case Study image">
+
+                    <div class="mt-4 lg:mb-10 sm:mb-2 flex flex-wrap justify-between lg:px-8 sm:px-4 lg:py-6 sm:py-0">
+                        <div class="xl:w-1/2 lg:w-1/2 md:w-full p-4">
+                            <h2 class="title mb-2 yellow">Search Page and Profile</h2>
+                            <p class="leading-relaxed subtitle mb-4">Users can check and book their appointment in the
+                                desired location, date, and time. Users can also search for Salons in different places
+                                by search bar.
+                            </p>
+                        </div>
+
+                        <div class="xl:w-1/2 lg:w-1/2 md:w-full problem-solved p-4">
+                            <h2 class="title mb-2">Problem Solved</h2>
+                            <p class="leading-relaxed subtitle mb-4">Providing to choose any desired time and day for
+                                the user to book an appointment inthe Salon. <br><br>For extra, If the user wants to
+                                schedule an
+                                appointment at another location, they can now search for places on the search page.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="w-3/4 mx-auto mt-24 mb-4" src="./res/casestudies/instyle/solvedui2.svg" alt="Instyle Case Study image">
+                <div class="mt-4 lg:mb-10 sm:mb-2 flex flex-wrap justify-between lg:px-8 sm:px-4 lg:py-6 sm:py-0">
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full ">
+                        <h2 class="title mb-2 yellow">Appointment and Checkout</h2>
+                        <p class="leading-relaxed subtitle mb-4">Users can easily track their appointment status and
+                            have Salon confirm their appointment or not. On the right side, is the checkout page, where
+                            users have two options for making payments Online and Offline.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="prototype mt-12 text-center w-full mb-10 mx-auto">
+                    <h2 class="caption mb-1 opacity-40">Prototype may take few seconds to load.</h2>
+                    <h1 class=" big-title mb-4">Interact with Final Prototype</h1>
+                    <iframe class=" mx-auto" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="560"
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9w2qqggJNfOxxZUrYiaXQs%2FInstyle-Salon%3Fnode-id%3D352%253A2063%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D352%253A2063"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="show-at-small mt-4 text-center w-full mb-4 mx-auto">
+                    <img class="w-full mx-auto mt-12 mb-2" src="./res/casestudies/instyle/allmockup.svg" alt="Instyle Case Study">
+                    <h1 class="small-box title mt-4 mb-4 p-6">You can Interact with Final Figma Prototype on Desktop.</h1>
+                </div>
+
+                <div class="mt-12 lg:mb-10 sm:mb-2 flex flex-wrap justify-between lg:px-8 sm:px-4 py-6">
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full ">
+                        <h2 class="title mb-2 yellow">What I Learned</h2>
+                        <p class="leading-relaxed subtitle mb-4">Soemtimes, assumption is a good way to figure out all
+                            possible
+                            problems of the users, but We shouldn't rely only on assumption. We never know everything
+                            about the user until and unless we talk to them, What we have to do is do the user research
+                            without
+                            being Omniscient.
+                        </p>
+                    </div>
+
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full ">
+                        <h2 class="title mb-2 invisible">Problem Solve</h2>
+                        <p class="leading-relaxed subtitle mb-4">User Research is very important because it’s the
+                            starting &
+                            turning point of the product. It provides an essential foundation for design strategy. It
+                            helps you to create an optimal product for users.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="md:mt-10 sm:mt-4 flex flex-col text-center w-full md:mb-10 sm:mb-2 mx-auto">
+                    <h1 class="big-title mb-4">Thank You!</h1>
+                    <p class="px-6 md:w-1/2 sm:w-2/3 mx-auto text-center leading-relaxed subtitle mb-4">Thank you for reading this Case
+                        Study! If you liked this
+                        let me
+                        know your thoughts. You can mail me at <a href="mailto: uxrishu@gmail.com"
+                            rel="noopener noreferrer" target="_blank"><b>uxrishu@gmail.com</b></a>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <a href="#" id="uparrow"><i class="fa-solid fa-angle-up"></i></a>
+
+        <footer class="body-font" id="footer">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a
+                    class="footer-logo flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+                    href="./index.html">
+                    <span class="ml-3 text-xl"><img src="./res/icons/logo.svg" alt="" draggable="false"></span>
+                    <span class="ml-3 text-xl">Rishabh Singh</span>
+                </a>
+                <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                    2022 Made by Me —
+                    <a href="mailto: uxrishu@gmail.com" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                        target="_blank">uxrishu@gmail.com</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <ul class="flex items-center">
+                        <a class="ml-5 " href="https://www.behance.net/uxrishu" target="_blank">
+                            <span class=" text-xl"><i class="fa-brands fa-behance"></i></span>
+                        </a>
+                        <a class="ml-5 " href="https://github.com/uxrishu" target="_blank">
+                            <span class=" text-xl"><i class="fa-brands fa-github"></i></span>
+                        </a>
+                        <a class="ml-5 " href="https://www.linkedin.com/in/uxrishu/" target="_blank">
+                            <span class="text-xl"><i class="fa-brands fa-linkedin-in"></i> </span>
+                        </a>
+                    </ul>
+                </span>
+            </div>
+        </footer>
+
+        <script src="./script/script.js"></script>
+</body>
+
+</html>
