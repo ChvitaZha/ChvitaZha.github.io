@@ -8,7 +8,7 @@
     <meta name="google-site-verification" content="j5ZmpRp6-ZeLuTr-M8DbzuULJBChS9HBV_7bDVQt9u4" />
     <title>圆桌—大学生知识交流与共享平台</title>
 
-    <link rel="icon" type="image/x-icon" href="./res/icons/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./res/icons/logo.svg">
     <link rel="stylesheet" href="./style/style.css">
 
     <!-- Scripting -->
@@ -20,103 +20,153 @@
     <!--自定义配置文件-->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                opred: '#ED1D24',
-                opyellow: '#ffbb00',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        opred: '#ED1D24',
+                        opyellow: '#ffbb00',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
 
 <body>
     <div class="custom__cursor__outer"></div>
     <div class="custom__cursor__inner"></div>
-    
-<!--导航-->
-<nav class="mt-4">
-    <div class="mx-auto">
-        <div class="flex">
-            <div class="flex wrapper justify-between px-12 py-4">
-                <div class="hidden md:flex items-center space-x-1">
-                    <a href="index.html" class="caption py-4 px-2 hover:text-opred"><span>Work</span></a>
-                    <a href="about.html" class="caption py-4 px-2 hover:text-opred"><span>About</span></a>
-                    <a href="contact.html"
-                        class="caption py-4 px-2 hover:text-opred"><span>Contact</span></a>
+
+    <!--导航-->
+    <nav class="mt-4">
+        <div class="mx-auto">
+            <div class="flex">
+                <div class="flex wrapper justify-between px-12 py-4">
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="caption py-4 px-2 hover:text-opred"><span>Work</span></a>
+                        <a href="about.html" class="caption py-4 px-2 hover:text-opred"><span>About</span></a>
+                        <a href="contact.html" class="caption py-4 px-2 hover:text-opred"><span>Contact</span></a>
+                    </div>
+
+                    <!-- Primary Navbar items -->
+                    <div class="md:flex items-center space-x-1">
+                        <a href="index.html" class="flex items-center logo">
+                            <img src="./res/icons/logo.svg" alt="" draggable="false">
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Primary Navbar items -->
-                <div class="md:flex items-center space-x-1">
-                    <a href="index.html" class="flex items-center logo">
-                        <img src="./res/icons/logo.svg" alt="" draggable="false">
-                    </a>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center py-4 px-4">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-10 h-12" style="color: #121117;" x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
-            </div>
-
-            <!-- Mobile menu button -->
-            <div class="md:hidden flex items-center py-4 px-4">
-                <button class="outline-none mobile-menu-button">
-                    <svg class=" w-10 h-12" style="color: #121117;" x-show="!showMenu" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
             </div>
         </div>
-    </div>
-    <!-- mobile menu -->
-    <div class="hidden mobile-menu">
-        <ul class="px-5 mobile-nav-items">
-            <li class="active"><a href="index.html" class="caption m-2">Work</a></li>
-            <li><a href="about.html" class="caption m-2 transition duration-300">About</a></li>
-            <li><a href="contact.html" class="caption m-2 transition duration-300">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="px-5 mobile-nav-items">
+                <li class="active"><a href="index.html" class="caption m-2">Work</a></li>
+                <li><a href="about.html" class="caption m-2 transition duration-300">About</a></li>
+                <li><a href="contact.html" class="caption m-2 transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<!--头图-->
-<img class="w-1920px mt-4 mb-4" src="https://calvinzheng.com/assets/images/projects/crux/cover.png" alt="ForbesCase Study image">
-    
+    <!--头图-->
+    <img class="w-full mt-4 mb-12" src="https://www.tushar.work/_next/image?url=%2Fstatic%2Fimages%2Fservicecenter%2Fbanner-2.png&w=1920&q=100">
+
     <div>
         <!--正文-->
-        <section class="wrapper body-font">
-            <div class="container px-12 py-12 mx-auto">
-                <!--标题 简介 配图-->
-                <div class="flex flex-col text-left mb-10">
-                    <p class="text-5xl font-bold mb-8">圆桌—大学生知识交流与共享平台</p>
-                    <p class="text-2xl regfont mb-6">UX DESIGN / RESEARCH / THEORY</p>
-                    <p class="text-2xl regfont mb-6">Encourage college students to share knowledge and conduct academic exchanges in virtual communities.</p>
+        <section class="wrapper">
+            <div class="container px-12 mx-auto">
+                <!--三段式标题-->
+                <div class="flex flex-col text-left mb-10" id="Overview">
+                    <p class="text-5xl pfsemibold mb-4">圆桌—大学生知识交流与共享平台</p>
+                    <p class="text-2xl pfregular mb-2">UX DESIGN / RESEARCH / THEORY</p>
+                    <p class="text-2xl pfregular">Encourage college students to share knowledge and conduct academic
+                        exchanges in virtual communities.</p>
                 </div>
-                <!--Overview & My role-->
-                <div class="flex flex-wrap justify-between">
-                    <div class="text-left mb-10 w-1/2" id="Overview">
-                        <p class="text-2xl boldfont mb-4">Overview</p>
-                        <p class="text-lg regfont pr-10">As a part of one of my core classes at Georgia Tech, ‘Research Methods for HCI’, students were divided into teams of 5 and tasked to work with an industry sponsor on a given problem statement and formulate an evidence-based design solution.</p>
+                <!--三平分文本-->
+                <div class="flex flex-wrap justify-between mb-10">
+                    <div class="text-left w-1/3">
+                        <p class="text-3xl pfsemibold mb-4">My Role</p>
+                        <p class="text-lg pfregular">
+                            UX design
+                            <br>UX research
                     </div>
-                    <div class="text-left mb-10 w-1/2" id="Overview">
-                        <p class="text-2xl boldfont mb-4">Overview</p>
-                        <p class="text-lg regfont pr-10">As a part of one of my core classes at Georgia Tech, ‘Research Methods for HCI’, students were divided into teams of 5 and tasked to work with an industry sponsor on a given problem statement and formulate an evidence-based design solution.</p>
+                    <div class="text-left w-1/3">
+                        <p class="text-3xl pfsemibold mb-4">Timeline</p>
+                        <p class="text-lg pfregular">14 Days
                     </div>
+                    <div class="text-left w-1/3">
+                        <p class="text-3xl pfsemibold mb-4">Tools</p>
+                        <p class="text-lg pfregular">Adobe XD<br>Adobe Illustrator</p>
+                    </div>
+                </div>
+                <!--标题+文字文本-->
+                <div class="flex flex-col text-left mb-10">
+                    <p class="text-3xl pfsemibold mb-4">Overview</p>
+                    <p class="text-lg pfregular">Evangelical Lutheran Church Hong Kong (ELCHK) was faced with increasing
+                        demand for their home-care service due to the aging situation in Hong Kong. They needed to
+                        revamp service flow and offerings to increase workflow efficiency and service quality.I was
+                        responsible for the user
+                        research, design system development and UX/UI design for one of the three products, which
+                        increase internal workflow
+                        efficiency and facilitate collaboration among employees.
+                    </p>
+                </div>
+                <!--分割线-->
+                <div class="divide-y divide-gray-200 container mb-10">
+                    <div>
+                        <p class="invisible">&nbsp</p>
+                    </div>
+                    <div>
+                        <p class="invisible">&nbsp</p>
+                    </div>
+
                 </div>
                 <!--Background-->
-                <img class="w-full" src="./res/casestudies/table/background.png" alt="ForbesCase Study image">
-                <div class="flex flex-wrap justify-between lg:px-8 sm:px-4 lg:py-6 sm:py-0">
-                    <div class="flex flex-wrap justify-between">
-                        <div class="md:w-full">
-                            <h2 class="title mb-2 yellow text-center">Background</h2>
-                            <p class="leading-relaxed subtitle mb-4">I started my research by reading user reviews on
-                                the
-                                app store. Many users rated the forbes app low rating mainly because of two reason,
-                                first
-                                is the design of the app is not good and the user experience of reading articles and
-                                news is
-                                bad.
-                            </p>
+                <div class="mb-10">
+                    <div class="flex flex-col text-left mb-10" id="Background">
+                        <p class="text-3xl pfsemibold mb-4">Background</p>
+                        <p class="text-lg pfregular mb-14">
+                            With the development and popularization of the Internet, online learning communities have gradually increased, which has built a good communication platform for knowledge exchange and sharing among teachers and students in colleges and universities. The learning and living spaces of college students are characterized by dispersal, fewer class concepts, and changeable living and learning locations, which limit the knowledge exchange in real life. Internet for more professional and academic help.
+                        </p>
+                        <img class="w-full" src="./res/casestudies/forbes/Background.png">
+                    </div>
+                    <div class="divide-y divide-gray-200 container">
+                        <div>
+                            <p class="invisible">&nbsp</p>
                         </div>
+                        <div>
+                            <p class="invisible">&nbsp</p>
+                        </div>
+
+                    </div>
+                </div>                
+                <!--Research-->
+                <div class="mb-10">
+                    <div class="flex flex-col text-left mb-10" id="Research">
+                        <p class="text-3xl pfsemibold mb-4">Research</p>
+                        <p class="text-lg pfregular mb-14">
+                            The research objects are college students in Guangzhou.Collect pain points and needs through online
+                            questionnaires.Ask questions around academic communication behaviors, Starting from user attitude and platform
+                            experience, ask questions about academic communication behavior.</p>
+                        <img class="w-full" src="./res/casestudies/forbes/User Research.png">
+                    </div>
+                    <div class="divide-y divide-gray-200 container">
+                        <div>
+                            <p class="invisible">&nbsp</p>
+                        </div>
+                        <div>
+                            <p class="invisible">&nbsp</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -126,21 +176,32 @@
 
         <script src="./script/script.js"></script>
 
-        
+
     </div>
 
     <nav>
-        <div class="shadow-Slate-50 fixed pt-2 pb-2 pr-2 rlist flex flex-col w-auto bg-white divide-y divide-gray-200 backdrop-blur-md bg-white/30 text-left">
-            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Overview</a></div>
-            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Background</a></div>
-            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Research</a></div>
-            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Problem & Solution</a></div>
-            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Theory & Strategy</a></div>
-            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">User Flow</a></div>
-            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Wireframe</a></div>
-            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Prototyping</a></div>
-            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">User Testing</a></div>
-            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Final Design</a></div>
+        <div
+            class="shadow-Slate-50 fixed pt-2 pb-2 pr-2 rlist flex flex-col w-auto bg-white divide-y divide-gray-200 backdrop-blur-md bg-white/30 text-left">
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a
+                    href="#Overview">Overview</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a
+                    href="#Background">Background</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a
+                    href="#Research">Research</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a
+                    href="#Overview">Problem & Solution</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a
+                    href="#Overview">Theory & Strategy</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a
+                    href="#Overview">User Flow</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a
+                    href="#Overview">Wireframe</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a
+                    href="#Overview">Prototype</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a
+                    href="#Overview">User Testing</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a
+                    href="#Overview">Final Design</a></div>
 
         </div>
     </nav>

@@ -26,6 +26,32 @@
 }
 .font2{font-family:"HeptaSlab-SemiBold"}
 
+/*中文字体*/
+
+@font-face{
+  font-family: "pflight";
+  src: url(../res/Fonts/pingfang_sc/苹方黑体-细-简.ttf);
+}
+.pflight{font-family:"pflight"}
+
+@font-face{
+  font-family: "pfregular";
+  src: url(../res/Fonts/pingfang_sc/苹方黑体-准-简.ttf);
+}
+.pfregular{font-family:"pfregular"}
+
+@font-face{
+  font-family: "pfmid";
+  src: url(../res/Fonts/pingfang_sc/苹方黑体-中粗-简.ttf);
+}
+.pfmid{font-family:"pfmid"}
+
+@font-face{
+  font-family: "pfsemibold";
+  src: url(../res/Fonts/pingfang_sc/苹方黑体-中黑-简.ttf);
+}
+.pfsemibold{font-family:"pfsemibold"}
+
 ::-moz-selection {
   background-color: #ED1D24;
   color: #ffffff;
@@ -308,8 +334,8 @@ body {
 
 .rlist {
   top: 30%;
-  font-size: 14px;
-  font-family: "Satoshi Regular";
+  font-size: 15px;
+  font-family: "pfregular";
 }
 
 .boldfont {
