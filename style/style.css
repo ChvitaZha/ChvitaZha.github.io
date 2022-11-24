@@ -36,29 +36,6 @@
   color: #ffffff;
 }
 
-.preloader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ED1D24  ;
-  color: #ffffff;
-  z-index: 9999;
-}
-
-.preloader p {
-  position: absolute;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-family: "HeptaSlab-Regular";
-  top: 10%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
-  font-size: 72px;
-}
-
 .custom__cursor__inner {
   height: 10px;
   width: 10px;
@@ -96,6 +73,7 @@
   margin: 1em auto;
   overflow-x: hidden;
 }
+
 
 body {
   color: #121117;
@@ -139,12 +117,7 @@ body {
   font-size: 18px;
 }
 
-.fa-linkedin-in,
-.fa-github,
-.fa-behance {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
+
 
 .fa-envelope {
   border-radius: 50%;
@@ -334,7 +307,19 @@ body {
 /*# sourceMappingURL=style.css.map */
 
 .rlist {
-  top: 0%;
-  font-size: 16px;
+  top: 30%;
+  font-size: 14px;
   font-family: "Satoshi Regular";
+}
+
+.boldfont {
+  font-family: "Satoshi Bold"
+}
+
+.midfont {
+  font-family: "Satoshi Medium"
+}
+
+.regfont {
+  font-family: "Satoshi Regular"
 }

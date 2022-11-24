@@ -30,93 +30,76 @@
           }
         }
       </script>
-    
-    <!--平滑过渡-->
-
-
 </head>
 
 <body>
     <div class="custom__cursor__outer"></div>
     <div class="custom__cursor__inner"></div>
     
-    <div class="wrapper">
+<!--导航-->
+<nav class="mt-4">
+    <div class="mx-auto">
+        <div class="flex">
+            <div class="flex wrapper justify-between px-12 py-4">
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="caption py-4 px-2 hover:text-opred"><span>Work</span></a>
+                    <a href="about.html" class="caption py-4 px-2 hover:text-opred"><span>About</span></a>
+                    <a href="contact.html"
+                        class="caption py-4 px-2 hover:text-opred"><span>Contact</span></a>
+                </div>
 
-        <!--导航-->
-        <nav class="mt-4">
-            <div class="mx-auto">
-                <div class="flex">
-                    <div class="flex wrapper justify-between px-12 py-4">
-                        <div class="hidden md:flex items-center space-x-1">
-                            <a href="index.html" class="caption py-4 px-2 hover:text-opred"><span>Work</span></a>
-                            <a href="about.html" class="caption py-4 px-2 hover:text-opred"><span>About</span></a>
-                            <a href="contact.html"
-                                class="caption py-4 px-2 hover:text-opred"><span>Contact</span></a>
-                        </div>
-
-                        <!-- Primary Navbar items -->
-                        <div class="md:flex items-center space-x-1">
-                            <a href="index.html" class="flex items-center logo">
-                                <img src="./res/icons/logo.svg" alt="" draggable="false">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Mobile menu button -->
-                    <div class="md:hidden flex items-center py-4 px-4">
-                        <button class="outline-none mobile-menu-button">
-                            <svg class=" w-10 h-12" style="color: #121117;" x-show="!showMenu" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg>
-                        </button>
-                    </div>
+                <!-- Primary Navbar items -->
+                <div class="md:flex items-center space-x-1">
+                    <a href="index.html" class="flex items-center logo">
+                        <img src="./res/icons/logo.svg" alt="" draggable="false">
+                    </a>
                 </div>
             </div>
-            <!-- mobile menu -->
-            <div class="hidden mobile-menu">
-                <ul class="px-5 mobile-nav-items">
-                    <li class="active"><a href="index.html" class="caption m-2">Work</a></li>
-                    <li><a href="about.html" class="caption m-2 transition duration-300">About</a></li>
-                    <li><a href="contact.html" class="caption m-2 transition duration-300">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
 
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center py-4 px-4">
+                <button class="outline-none mobile-menu-button">
+                    <svg class=" w-10 h-12" style="color: #121117;" x-show="!showMenu" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+        <ul class="px-5 mobile-nav-items">
+            <li class="active"><a href="index.html" class="caption m-2">Work</a></li>
+            <li><a href="about.html" class="caption m-2 transition duration-300">About</a></li>
+            <li><a href="contact.html" class="caption m-2 transition duration-300">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--头图-->
+<img class="w-1920px mt-4 mb-4" src="https://calvinzheng.com/assets/images/projects/crux/cover.png" alt="ForbesCase Study image">
+    
+    <div>
         <!--正文-->
         <section class="wrapper body-font">
-
-            <div class="container px-12 py-24 mx-auto">
+            <div class="container px-12 py-12 mx-auto">
                 <!--标题 简介 配图-->
-                <div class="flex flex-col text-center w-full mb-10">
-                    <h2 class="caption mb-1 opacity-40">UX design | 2021</h2>
-                    <h1 class="big-title font-bold mb-4">圆桌—大学生知识交流与共享平台</h1>
-                    <p class="lg:w-2/4 mx-auto subtitle">Optimizing the reading experience of the forbes app. Focuses on
-                        people’s frustration and goals and come up with the solution that is easy to use and equitable.
-                    </p>
+                <div class="flex flex-col text-left mb-10">
+                    <p class="text-5xl font-bold mb-8">圆桌—大学生知识交流与共享平台</p>
+                    <p class="text-2xl regfont mb-6">UX DESIGN / RESEARCH / THEORY</p>
+                    <p class="text-2xl regfont mb-6">Encourage college students to share knowledge and conduct academic exchanges in virtual communities.</p>
                 </div>
-                <img class="w-full mt-12 mb-4" src="./res/casestudies/forbes/banner.png" alt="ForbesCase Study image">
                 <!--Overview & My role-->
-                <div class="sm:mb-4 sm:mb-2 flex flex-wrap justify-between lg:px-8 sm:px-4 lg:pt-14 sm:py-0">
-                    <div class="xl:w-1/2 lg:w-1/2 md:w-full md:p-4 sm:p-0" id="Overview">
-                        <h2 class="title mb-2 yellow text-center md:flex">Overview</h2>
-                        <p class="leading-relaxed subtitle mb-4">As a 32 Weeks Intensive Design Course from Google UX
-                            Program,
-                            This UX study aims
-                            to understand forbes's users needs and frustration. This project has been done for
-                            educational purposes and is in no way made, owned, or affiliated directly with any
-                            application
-                        </p>
+                <div class="flex flex-wrap justify-between">
+                    <div class="text-left mb-10 w-1/2" id="Overview">
+                        <p class="text-2xl boldfont mb-4">Overview</p>
+                        <p class="text-lg regfont pr-10">As a part of one of my core classes at Georgia Tech, ‘Research Methods for HCI’, students were divided into teams of 5 and tasked to work with an industry sponsor on a given problem statement and formulate an evidence-based design solution.</p>
                     </div>
-
-                    <div class="xl:w-1/2 lg:w-1/2 md:w-full md:p-4 sm:p-0">
-                        <h2 class="title mb-2 yellow text-center md:flex">My Role</h2>
-                        <p class="leading-relaxed subtitle mb-4 leading-relaxed">
-                            <b>Role: </b>UX Researcher & UX Designer<br>
-                            <b>Timeline: </b>10 Days<br>
-                            <b>Context: </b>Personal Project under the mentorship Google Mentors from Coursera.<br>
-                        </p>
+                    <div class="text-left mb-10 w-1/2" id="Overview">
+                        <p class="text-2xl boldfont mb-4">Overview</p>
+                        <p class="text-lg regfont pr-10">As a part of one of my core classes at Georgia Tech, ‘Research Methods for HCI’, students were divided into teams of 5 and tasked to work with an industry sponsor on a given problem statement and formulate an evidence-based design solution.</p>
                     </div>
                 </div>
                 <!--Background-->
@@ -137,20 +120,28 @@
                     </div>
                 </div>
             </div>
-            
         </section>
 
         <a href="#" id="uparrow"><i class="fa-solid fa-angle-up"></i></a>
 
         <script src="./script/script.js"></script>
+
+        
     </div>
 
     <nav>
-        <div class="fixed rlist flex w-full bg-white divide-x divide-gray-200 backdrop-blur-md bg-white/30 shadow-2xl">
-            <div class="p-1 flex-auto flex-grow transition duration-500 ease-in-out hover:bg-opred hover:text-white text-center"><a href="#Overview">Overview</a></div>
-            <div class="p-1 flex-auto flex-grow transition duration-500 ease-in-out hover:bg-opred hover:text-white text-center"><a href="#Overview">Background</a></div>
-            <div class="p-1 flex-auto flex-grow transition duration-500 ease-in-out hover:bg-opred hover:text-white text-center"><a href="#Overview">User Research</a></div>
-            <div class="p-1 flex-auto flex-grow transition duration-500 ease-in-out hover:bg-opred hover:text-white text-center"><a href="#Overview">Problem</a></div>
+        <div class="shadow-Slate-50 fixed pt-2 pb-2 pr-2 rlist flex flex-col w-auto bg-white divide-y divide-gray-200 backdrop-blur-md bg-white/30 text-left">
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Overview</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Background</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Research</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Problem & Solution</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Theory & Strategy</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">User Flow</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Wireframe</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Prototyping</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">User Testing</a></div>
+            <div class="p-1 flex-auto transition duration-500 ease-in-out hover:bg-opred hover:text-white "><a href="#Overview">Final Design</a></div>
+
         </div>
     </nav>
 </body>
