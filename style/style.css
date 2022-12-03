@@ -61,35 +61,7 @@
   background-color: #ED1D24;
   color: #ffffff;
 }
-
-.custom__cursor__inner {
-  height: 10px;
-  width: 10px;
-  position: fixed;
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-  background-color: #ED1D24;
-  border-radius: 50%;
-  -webkit-transition: height 0.3s cubic-bezier(0.46, 0.03, 0.52, 0.96), width 0.3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
-  transition: height 0.3s cubic-bezier(0.46, 0.03, 0.52, 0.96), width 0.3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
-  z-index: 5000;
-  pointer-events: none;
-}
-
-.custom__cursor__outer {
-  height: 42px;
-  width: 42px;
-  border-radius: 50%;
-  border: 0 solid #121117;
-  background-color: #ffbb00;
-  position: fixed;
-  z-index: 5000;
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-  pointer-events: none;
-  opacity: 0.2;
-}
-
+d
 .wrapper {
   max-width: 1300px;
   width: 100%;
