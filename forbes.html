@@ -10,6 +10,7 @@
 
     <link rel="icon" type="image/x-icon" href="./res/icons/logo.svg">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
 
     <!-- Scripting -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,6 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
+    
     <!--自定义配置文件-->
     <script>
         tailwind.config = {
@@ -37,52 +39,27 @@
     <div class="custom__cursor__inner"></div>
 
     <!--导航-->
-    <nav class="mt-4">
-        <div class="mx-auto">
-            <div class="flex">
-                <div class="flex wrapper justify-between px-12 py-4">
-                    <div class="hidden md:flex items-center space-x-1">
-                        <a href="index.html" class="caption py-4 px-2 hover:text-opred"><span>Work</span></a>
-                        <a href="about.html" class="caption py-4 px-2 hover:text-opred"><span>About</span></a>
-                        <a href="contact.html" class="caption py-4 px-2 hover:text-opred"><span>Contact</span></a>
-                    </div>
-
-                    <!-- Primary Navbar items -->
-                    <div class="md:flex items-center space-x-1">
-                        <a href="index.html" class="flex items-center logo">
-                            <img src="./res/icons/logo.svg" alt="" draggable="false">
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center py-4 px-4">
-                    <button class="outline-none mobile-menu-button">
-                        <svg class=" w-10 h-12" style="color: #121117;" x-show="!showMenu" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
+    <nav class="py-6 px-24 sticky top-0 backdrop-blur-lg bg-white/50 showout">
+        <div class="flex justify-between px-12">
+            <div>
+                <a href="index.html" class="flex logo">
+                    <img src="./res/icons/logo2.svg" alt="" draggable="false">
+                </a>
             </div>
-        </div>
-        <!-- mobile menu -->
-        <div class="hidden mobile-menu">
-            <ul class="px-5 mobile-nav-items">
-                <li class="active"><a href="index.html" class="caption m-2">Work</a></li>
-                <li><a href="about.html" class="caption m-2 transition duration-300">About</a></li>
-                <li><a href="contact.html" class="caption m-2 transition duration-300">Contact</a></li>
-            </ul>
+            <div class="space-x-1">
+                <a href="index.html" class="caption py-4 px-2 transition duration-500 ease-in-out hover:text-opred"><span>Work</span></a>
+                <a href="about.html" class="caption py-4 px-2 transition duration-500 ease-in-out hover:text-opred"><span>About</span></a>
+                <a href="contact.html" class="caption py-4 px-2 transition duration-500 ease-in-out hover:text-opred"><span>Contact</span></a>
+            </div>
         </div>
     </nav>
 
     <!--头图-->
-    <img class="w-full mt-4 mb-20" src="https://www.tushar.work/_next/image?url=%2Fstatic%2Fimages%2Fservicecenter%2Fbanner-2.png&w=1920&q=100">
+    <img class="banner mb-20" src="./res/casestudies/forbes/banner.png">
 
     <div>
         <!--正文-->
-        <section class="wrapper">
+        <section class="px-24">
             <div class="container px-12 mx-auto">
                 <!--三段式标题-->
                 <div class="flex flex-col text-left mb-12">
@@ -109,7 +86,7 @@
                     </div>
                 </div>
                 <!--分割线-->
-                <div class="divide-y divide-gray-200 container my-20">
+                <div class="divide-y divide-gray-200 container my-20" id="Overview">
                                     <div>
                                         <p class="invisible">&nbsp</p>
                                     </div>
@@ -119,7 +96,7 @@
                 
                 </div>
                 <!--标题+文字文本-->
-                <div class="flex justify-between text-left my-20" id="Overview">
+                <div class="flex justify-between text-left my-20">
                     <div class="flex w-1/3">
                     <p class="text-3xl pfsemibold underline">Overview</p>
                     </div>
@@ -136,7 +113,7 @@
                     </div>
                 </div>
                 <!--分割线-->
-                <div class="divide-y divide-gray-200 container my-20">
+                <div class="divide-y divide-gray-200 container my-20" id="Background">
                     <div>
                         <p class="invisible">&nbsp</p>
                     </div>
@@ -147,7 +124,7 @@
                 </div>
                 <!--Background-->
                 <div>
-                    <div class="flex justify-between text-left my-20" id="Background">
+                    <div class="flex justify-between text-left my-20">
                         <div class="flex w-1/3">
                         <p class="text-3xl pfsemibold underline">Background</p>
                         </div>
@@ -175,7 +152,7 @@
                     </div>
                     <div><img class="w-full" src="./res/casestudies/forbes/problem.png"></div>
                 </div>
-                <div class="divide-y divide-gray-200 container my-20">
+                <div class="divide-y divide-gray-200 container my-20" id="Research">
                     <div>
                         <p class="invisible">&nbsp</p>
                     </div>
@@ -185,7 +162,7 @@
                 </div>                
                 <!--Research-->    
                 <div>
-                    <div class="flex justify-between text-left my-20" id="Research">
+                    <div class="flex justify-between text-left my-20">
                         <div class="flex w-1/3">
                         <p class="text-3xl pfsemibold underline">Research Goals</p>
                         </div>
@@ -230,42 +207,85 @@
                         </div>
                         <div class="flex w-2/3">
                         <p class="text-xl pfregular leading-relaxed">                           
-                        Based on the affinity map, we generated the following insights by grouping similar notes under similar headings.
+                        Based on the affinity map, we generated the following insights by grouping similar notes under similar headings to understand their needs and pain points.
                         </p>
                         </div>
                     </div>
-                    <div><img class="w-full" src="./res/casestudies/forbes/Affinity map.png"></div>
+                    <div><a class="cursor-zoom-in" href="./res/casestudies/forbes/Affinity map.png" target="_blank"><img src="./res/casestudies/forbes/Affinity map.png"></a></div>
                     <div class="flex justify-between text-left my-20">
                         <div class="flex w-1/3">
                         <p class="text-3xl pfsemibold underline">Personas</p>
                         </div>
                         <div class="flex w-2/3">
                         <p class="text-xl pfregular leading-relaxed">                           
-                        We created three personas that captured the essence of our users and their characteristics. 
-                        We also formed empathy maps to understand their needs and pain points.
+                        We use “knowledge” as the x-axis and “sharing” as the y-axis to divide users into three categories. We created three personas that captured the essence of our users and their characteristics. 
                         </p>
                         </div>
                     </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="w-full" src="./res/casestudies/forbes/persona-2.png"></div>
+                            <div class="swiper-slide"><img class="w-full" src="./res/casestudies/forbes/persona-1.png"></div>
+                            <div class="swiper-slide"><img class="w-full" src="./res/casestudies/forbes/persona-3.png"></div>
+                        </div>
+                        <!-- 如果需要导航按钮 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
-                
-                <div class="divide-y divide-gray-200 container my-20">
+                <div class="divide-y divide-gray-200 container my-20" id="Problem & Solution">
                     <div>
                         <p class="invisible">&nbsp</p>
                     </div>
                     <div>
                         <p class="invisible">&nbsp</p>
                     </div>
-                </div>                
+                </div>        
+                <!--Problem&Solution-->
+                <div class="flex justify-between text-left my-20">
+                    <div class="flex w-1/3">
+                    <p class="text-3xl pfsemibold underline">Personas</p>
+                    </div>
+                    <div class="flex w-2/3">
+                    <p class="text-xl pfregular leading-relaxed">                           
+                    We created three personas that captured the essence of our users and their characteristics. 
+                    </p>
+                    </div>
+                </div>
+                <div><img class="w-full" src="./res/casestudies/forbes/Problem&Solution.png"></div>
             </div>
         </section>
 
         <a href="#" id="uparrow"><i class="fa-solid fa-angle-up"></i></a>
 
         <script src="./script/script.js"></script>
-
-
+        <script src="./script/swiper-bundle.min.js"></script>
+        <script>        
+            var mySwiper = new Swiper ('.swiper', {
+              loop: true, // 循环模式选项
+              
+              // 如果需要分页器
+              pagination: {
+                el: '.swiper-pagination',
+              },
+              
+              // 如果需要前进后退按钮
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              
+              // 如果需要滚动条
+              scrollbar: {
+                el: '.swiper-scrollbar',
+              },
+            })        
+        </script>
     </div>
 
+    
     <nav>
         <div
             class="shadow-Slate-50 fixed pt-2 pb-2 pr-2 rlist flex flex-col w-auto bg-white divide-y divide-gray-200 backdrop-blur-md bg-white/30 text-left">
@@ -276,7 +296,7 @@
             <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a
                     href="#Research">Research</a></div>
             <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a
-                    href="#Overview">Problem & Solution</a></div>
+                    href="#Problem & Solution">Problem & Solution</a></div>
             <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a
                     href="#Overview">Theory & Strategy</a></div>
             <div class="p-1 flex-auto transition duration-500 ease-in-out hover:text-opred hover:underline "><a

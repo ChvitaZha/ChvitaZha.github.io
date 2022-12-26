@@ -52,6 +52,7 @@
 }
 .pfsemibold{font-family:"pfsemibold"}
 
+
 ::-moz-selection {
   background-color: #ED1D24;
   color: #ffffff;
@@ -61,17 +62,6 @@
   background-color: #ED1D24;
   color: #ffffff;
 }
-d
-.wrapper {
-  max-width: 1300px;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1em auto;
-  overflow-x: hidden;
-}
-
 
 body {
   color: #121117;
@@ -80,7 +70,7 @@ body {
 }
 
 .logo {
-  width: 52px;
+  width: 140px;
   height: auto;
 }
 
@@ -205,7 +195,7 @@ body {
 .caption {
   font-size: 16px;
   letter-spacing: 0.8px;
-  font-family: "Satoshi Regular";
+  font-family: "pfmid";
   text-transform: uppercase;
 }
 
@@ -310,6 +300,13 @@ body {
   font-family: "pfregular";
 }
 
+.tlist {
+  top: 0%;
+  left: 10%;
+  font-size: 14px;
+  font-family: "pfregular";
+}
+
 .boldfont {
   font-family: "Satoshi Bold"
 }
@@ -320,4 +317,16 @@ body {
 
 .regfont {
   font-family: "Satoshi Regular"
+}
+
+.showout {
+  z-index:9999;
+}
+
+.swiper {
+  width: 1300px;
+}  
+
+.banner {
+  width: 100%;
 }
