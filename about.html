@@ -1,199 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="j5ZmpRp6-ZeLuTr-M8DbzuULJBChS9HBV_7bDVQt9u4" />
-    <title>About Me</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/x-icon" href="./res/icons/favicon.ico">
-    <link rel="stylesheet" href="./style/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 
-    <!-- Scripting -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/df18b2a205.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <div class="custom__cursor__outer"></div>
-    <div class="custom__cursor__inner"></div>
-    <div class="wrapper">
-        <nav class="mt-4">
-            <div class="mx-auto">
-                <div class="flex">
-                    <div class="flex wrapper justify-between px-4 py-4">
-                        <div class="hidden md:flex items-center space-x-1">
-                            <a href="index.html" class="caption py-4 px-2"><span>Work</span></a>
-                            <a href="about.html" class="caption py-4 px-2"><span>About</span></a>
-                            <a href="contact.html" class="caption py-4 px-2"><span>Contact</span></a>
-                        </div>
-
-                        <!-- Primary Navbar items -->
-                        <div class="md:flex items-center space-x-1">
-                            <a href="index.html" class="flex items-center">
-                                <img src="./res/icons/logo.svg" alt="" draggable="false">
-                            </a>
-                        </div>
-
-                        <div class="hidden md:flex items-center">
-                            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                                <ul class="flex items-center">
-                                    <a class="ml-5 " href="https://www.behance.net/uxrishu" target="_blank">
-                                        <span class=" text-xl"><i class="fa-brands fa-behance"></i></span>
-                                    </a>
-                                    <a class="ml-5 " href="https://www.linkedin.com/in/uxrishu/" target="_blank">
-                                        <span class="text-xl"><i class="fa-brands fa-linkedin-in"></i> </span>
-                                    </a>
-                                    <a class="ml-5 " href="https://github.com/uxrishu" target="_blank">
-                                        <span class=" text-xl"><i class="fa-brands fa-github"></i></span>
-                                    </a>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- Mobile menu button -->
-                    <div class="md:hidden flex items-center py-4 px-4">
-                        <button class="outline-none mobile-menu-button">
-                            <svg class=" w-10 h-12" style="color: #121117;" x-show="!showMenu" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg>
-                        </button>
-                    </div>
+    <title>claytonanderson.design</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar-1 d-none d-md-block col-md-2 pt-5">
+          <div class="logo sticky-top">
+            <a href="index.html"><img src="img/logo.svg" height=75></a>
+            <p class="pt-2 mb-0">Clayton Anderson</p>
+            <p class="pt-1">UX Designer</p>
+          </div>
+        </div>
+        <div class="content col-12 col-md-9">
+          <div class="header">
+            <nav class="navbar navbar-expand-md navbar-light bg-light py-5 g-0">
+              <div class="container">
+                <a href="index.html"><img class="logo d-md-none" src="img/logo.svg" height=75></a>
+                <p class="d-block d-md-none me-auto unstyled pt-3 ps-2">Clayton Anderson <br> UX Designer</p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ms-auto">
+                      <a class="nav-link" href="index.html">Work</a>
+                    </li>
+                    <li class="nav-item ms-auto">
+                      <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                  </ul>
                 </div>
-            </div>
-            <!-- mobile menu -->
-            <div class="hidden mobile-menu">
-                <ul class="px-5 mobile-nav-items">
-                    <li class="active"><a href="index.html" class="caption m-2">Work</a></li>
-                    <li><a href="about.html" class="caption m-2 transition duration-300">About</a></li>
-                    <li><a href="contact.html" class="caption m-2 transition duration-300">Contact</a></li>
-                    <li><a href="https://www.behance.net/uxrishu" target="_blank"
-                            class="caption m-2 transition duration-300">Behance
-                            <i class="fa-solid fa-up-right-from-square"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/uxrishu/" target="_blank"
-                            class="caption m-2 transition duration-300">Linkedin <i
-                                class="fa-solid fa-up-right-from-square"></i></a></li>
-                    <li><a href="https://github.com/uxrishu" target="_blank"
-                            class="caption m-2 transition duration-300">Github <i
-                                class="fa-solid fa-up-right-from-square"></i></a></li>
+              </div>
+            </nav>
+          </div>
+          <div class="main">
+            <div class="row g-4 mt-3">
+              <div class="col-12 col-md-6">
+                <img class="img-fluid" src="img/bio.png">
+              </div>
+              <div class="col">
+                <h1>Hi, I'm Clayton</h1>
+                <p class="pt-4 thin">I'm a UX Designer with a background in web development and an education focused on understanding human relationships with the broader world.</p> 
+                  
+                <p class="thin">I'm passionate about creating products and solutions that improve the lives of people at large scales, that are supportive of people's health, and that integrate responsibly with the environment.</p> 
+                  
+                <p class="thin">I'm drawn to design because it requires a commitment to learning and thinking creatively about user needs and the innovative solutions that can meet them.</p>
+                  
+                <p class="thin">I'd love to hear from you!</p>
+                
+                <hr>
+                <h4>Contact</h4>
+                <a href="mailto:claytonanderson.work@gmail.com" target="_blank" class="d-flex align-items-center"><i class="bi bi-envelope pe-2"></i>claytonanderson.work@gmail.com</a>
+                <!-- <a href="tel:316-304-7789" class="d-flex align-items-center"><i class="bi bi-telephone pe-2"></i>316-304-7789</a> -->
+                <h4 class="pt-4">Connect</h4>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/claytona/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.instagram.com/claytonanderson.design/" target="_blank"><i class="bi bi-instagram"></i></a></li>
                 </ul>
+                <h4 class="pt-3">Resume</h4>
+                <a href="Clayton Anderson Resume.pdf" target="_blank"><img src="img/resume.png" style="height:300px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></a>
+                <p class="pt-3"><a class="btn btn-primary" href="Clayton Anderson Resume.pdf" target="_blank" style="font-size: 15px; letter-spacing:1.25px;" role="button">RESUME</a></p>
+              </div>
             </div>
-        </nav>
-        <section class="body-font">
-            <div class="sm:mt-2 mx-auto flex px-5 py-24 md:flex-row flex-col items-center justify-between">
-                <div class="lg:max-w-lg lg:w-full">
-                    <img class="object-cover object-center rounded heroImg" id="mainImg"
-                        src="./res/images/heroImg03.svg" alt="hero" draggable="false">
-                </div>
-                <div
-                    class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <div class="title mb-2">Hi! I'm Rishabh</div>
-                    <h1 class="mb-4 subtitle">Passionate User Experience Designer with knowledge of Website Developement
-                        and Graphic Design in experience to deliver end-to-end
-                        User Interface Designs of Apps and Websites. Currently based in Noida, Uttar Pradesh.</h1>
-                    <div class="flex justify-center">
-                        <a href="./res/Rishabh Resume.pdf" target="_blank">
-                            <button class="caption flex mx-auto mt-4 primary-button border-0">Resume</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="body-font">
-            <div class="flex flex-wrap mb-10">
-                <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                    <div
-                        class="w-12 h-12 inline-flex items-center justify-center rounded-full icons mb-4 flex-shrink-0">
-                        <i class="fa-solid fa-brain"></i>
-                    </div>
-                    <h2 class="caption text-lg sm:text-xl mb-2">UX Designer</h2>
-                    <p class="subtitle leading-relaxed mb-4">Identifying User's Problems and focused on How Users
-                        interact with the Product.<br>
-                        <ul class="bullet-list subtitle">
-                            <li>User Research</li>
-                            <li>Userflows and Storyboards</li>
-                            <li>User Journey</li>
-                            <li>Competitve Audits</li>
-                        </ul>
-                    </p>
-                </div>
+          </div>
+          <div class="footer py-5 mb-5">
+              <ul class="list-inline d-flex">
+                <li class="list-inline-item"><a href="mailto:claytonanderson.work@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/claytona/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/claytonanderson.design/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                <li class="list-inline-item ms-auto"> &copy; Clayton Anderson 2022</li>
+              </ul>
+          </div>
+          
+        </div>
+        <div class="sidebar-2 d-none d-md-block col-md">
+          
+        </div>
+      </div>
+    </div>
+    
 
-                <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
-                    data-aos="fade-up" data-aos-delay="600">
-                    <div
-                        class="w-12 h-12 inline-flex items-center justify-center rounded-full icons mb-4 flex-shrink-0">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <h2 class="caption text-lg sm:text-xl mb-2">UI Designer</h2>
-                    <p class="leading-relaxed subtitle mb-4">Hands-on Experience with User Interface Design of Mobile
-                        Apps and Websites<br>
-                        <ul class="bullet-list subtitle">
-                            <li>Visual Design</li>
-                            <li>Wireframes</li>
-                            <li>Prototypes</li>
-                            <li>Mockups</li>
-                        </ul>
-                    </p>
-                </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-                <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
-                    data-aos="fade-up" data-aos-delay="600">
-                    <div
-                        class="w-12 h-12 inline-flex items-center justify-center rounded-full icons mb-4 flex-shrink-0">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <h2 class="caption text-lg sm:text-xl mb-2">Web Developer</h2>
-                    <p class="leading-relaxed subtitle mb-4">Github Open Source Contributor with over 2 years of
-                        experience in Web-Design.<br>
-                        <ul class="bullet-list subtitle">
-                            <li>HTML, CSS, SCSS</li>
-                            <li>Javascript, Jquery</li>
-                            <li>Bootstrap, Tailwind</li>
-                            <li>Github, VS Code</li>
-                        </ul>
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-        <a href="#" id="uparrow"><i class="fa-solid fa-angle-up"></i></a>
-
-        <footer class="body-font" id="footer">
-            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-                <a class="footer-logo flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
-                    href="./index.html">
-                    <span class="ml-3 text-xl"><img src="./res/icons/logo.svg" alt="" draggable="false"></span>
-                    <span class="ml-3 text-xl">Rishabh Singh</span>
-                </a>
-                <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
-                    2022 Made by Me —
-                    <a href="mailto: uxrishu@gmail.com" class="text-gray-600 ml-1" rel="noopener noreferrer"
-                        target="_blank">uxrishu@gmail.com</a>
-                </p>
-                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                    <ul class="flex items-center">
-                        <a class="ml-5 " href="https://www.behance.net/uxrishu" target="_blank">
-                            <span class=" text-xl"><i class="fa-brands fa-behance"></i></span>
-                        </a>
-                        <a class="ml-5 " href="https://github.com/uxrishu" target="_blank">
-                            <span class=" text-xl"><i class="fa-brands fa-github"></i></span>
-                        </a>
-                        <a class="ml-5 " href="https://www.linkedin.com/in/uxrishu/" target="_blank">
-                            <span class="text-xl"><i class="fa-brands fa-linkedin-in"></i> </span>
-                        </a>
-                    </ul>
-                </span>
-            </div>
-        </footer>
-        <script src="./script/script.js"></script>
-</body>
-
+  </body>
 </html>

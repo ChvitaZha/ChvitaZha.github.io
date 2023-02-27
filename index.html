@@ -1,276 +1,143 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="UX,portfolio,Chvita">
-    <meta name="author" content="Chvita" />
-    <meta name="keywords" content="查成柯,Zhachengke,Chvita,UX,portfolio">
-    <title>Chvita Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 
-    <!-- CSS -->
-    <link rel="icon" type="image/x-icon" href="./res/icons/logo.svg">
-    <link rel="stylesheet" href="./style/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo-text.svg">
 
-    <!-- Scripting -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/df18b2a205.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-
-    <!--自定义配置文件-->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                opred: '#ED1D24',
-                opyellow: '#ffbb00',
-              }
-            }
-          }
-        }
-      </script>
-
-</head>
-
-<body>
-    <!--导航-->
-    <div class="py-6 px-24 sticky top-0 backdrop-blur-xl bg-white/50 showout">
-        <div class="flex justify-between px-12">
-            <div>
-                <a href="index.html" class="flex logo">
-                    <img src="./res/icons/logo2.svg" alt="" draggable="false">
-                </a>
-            </div>
-            <div class="space-x-1">
-                <a href="index.html" class="caption py-4 px-2 transition duration-500 ease-in-out hover:text-opred"><span>Work</span></a>
-                <a href="about.html" class="caption py-4 px-2 transition duration-500 ease-in-out hover:text-opred"><span>About</span></a>
-                <a href="contact.html" class="caption py-4 px-2 transition duration-500 ease-in-out hover:text-opred"><span>Contact</span></a>
-            </div>
+    <title>CHVITA.design</title>
+  </head>
+  
+  <body id="page-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar-1 d-none d-md-block col-md-2 pt-5">
+          <div class="logo sticky-top">
+            <a href="#page-top"><img src="img/logo-text.svg" class="primary" height=75></a>
+            <p class="pt-3 mb-0 fs-5 fw-bold">Chvita Zha</p>
+            <p class="pt-1">UX Designer interested in<br>
+              <span class="text-decoration-underline">Media Ecology</span> and<br>
+              <span class="text-decoration-underline">Cognitive Psychology</span>
+            </p>
+          </div>
         </div>
-    </div>
-
-    <div class="px-24">
-        <!-- 头图 -->
-        <section class="">
-            <!-- 欢迎 -->
-            <div class="text-center md:text-left mx-12 mt-20 mb-24">
-
-                <p class="font2 text-4xl md:text-6xl lg:text-8xl font-semibold tracking-tight">Nice to meet ya! <img src="./res/icons/logo-text.svg" alt="some_text" width="112.2278" height="92.428" class="inline transform scale-125 animate-bounce"></p>
-
-                <p class="font2 text-4xl md:text-6xl lg:text-8xl font-semibold tracking-tight">
-                    I'm <span
-                    class="bg-black transition duration-500 ease-in-out hover:bg-opyellow text-white leading-relaxed hover:text-opred">Zha
-                    Chengke↗</span>.
-
-                </p>
-                <p class="font1 text-1xl md:text-4xl lg:text-5xl font-semibold tracking-tight">A User Experience
-                    Designer interested in <span class="underline">Cognitive Psychology↗</span> and <span
-                        class="underline">Media Ecology↗</span>.</p>
-            </div>
-            <!-- 按钮 -->
-            <div class="text-center md:text-left mx-12">
-                <a href="./res/Rishabh Resume.pdf" target="_blank">
-                    <button
-                        class="shadow-xl bg-origin-border p-1 text-white text-2xl transition duration-500 ease-in-out bg-black hover:bg-opred transform hover:translate-x-4 hover:shadow-2xl">CLICK
-                        HERE TO DOWNLOAD MY RESUME ↘</button>
-                </a>
-            </div>
-        </section>
-
-        <section class="body-font" id="work">
-            <div class="container px-5 lg:py-24 md:py-24 sm:py-12 mx-auto">
-                <div class="flex flex-wrap -m-4 justify-between">
-                    <!--项目一开始-->
-                    <div class="sm:mt-0 case-study p-8 md:w-1/2">
-                        <div class="h-full overflow-hidden">
-                            <img class="case-study-cover lg:h-96 md:h-64 w-full object-cover object-center"
-                                src="./res/images/forbes.png" alt="blog" draggable="false">
-                            <div class="py-5 mt-2">
-                                <h2 class="tracking-widest tags mb-1 text-black bg-white border border-black">社会交换理论</h2>
-                                <h2 class="tracking-widest tags mb-1 text-black bg-white border border-black">隐喻设计</h2>
-                                <h1 class="mt-4 title">圆桌—大学生知识交流与共享平台</h1>
-                                <p class="leading-relaxed mb-3 subtitle">Based on the social exchange theory, the
-                                    metaphor of "round table" is introduced to help college students construct an equal
-                                    knowledge exchange relationship.</p>
-                                <div class="items-center">
-                                    <a href="forbes.html" target="_blank"
-                                        class="uppercase mt-2 inline-flex items-center md:mb-2 lg:mb-0 secondary-button bg-black text-white p-1 transition duration-500 ease-in-out hover:bg-opred hover:text-white transform hover:translate-x-4">Read
-                                        Case
-                                        Study
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
-                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--项目二开始-->
-                    <div class="sm:mt-0 case-study p-8 md:w-1/2">
-                        <div class="h-full overflow-hidden">
-                            <img class="case-study-cover lg:h-96 md:h-64 w-full object-cover object-center"
-                                src="./res/images/forbes.png" alt="blog" draggable="false">
-                            <div class="py-5 mt-2">
-                                <h2 class="tracking-widest tags mb-1 text-black bg-white border border-black">社会交换理论</h2>
-                                <h2 class="tracking-widest tags mb-1 text-black bg-white border border-black">隐喻设计</h2>
-                                <h1 class="mt-4 title">圆桌—大学生知识交流与共享平台</h1>
-                                <p class="leading-relaxed mb-3 subtitle">Based on the social exchange theory, the
-                                    metaphor of "round table" is introduced to help college students construct an equal
-                                    knowledge exchange relationship.</p>
-                                <div class="items-center">
-                                    <a href="forbes.html" target="_blank"
-                                        class="uppercase mt-2 inline-flex items-center md:mb-2 lg:mb-0 secondary-button bg-black text-white p-1 transition duration-500 ease-in-out hover:bg-opred hover:text-white transform hover:translate-x-4">Read
-                                        Case
-                                        Study
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
-                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--项目三开始-->
-                    <div class="sm:mt-0 case-study p-8 md:w-1/2">
-                        <div class="h-full overflow-hidden">
-                            <img class="case-study-cover lg:h-96 md:h-64 w-full object-cover object-center"
-                                src="./res/images/forbes.png" alt="blog" draggable="false">
-                            <div class="py-5 mt-2">
-                                <h2 class="tracking-widest tags mb-1 text-black bg-white border border-black">社会交换理论</h2>
-                                <h2 class="tracking-widest tags mb-1 text-black bg-white border border-black">隐喻设计</h2>
-                                <h1 class="mt-4 title">圆桌—大学生知识交流与共享平台</h1>
-                                <p class="leading-relaxed mb-3 subtitle">Based on the social exchange theory, the
-                                    metaphor of "round table" is introduced to help college students construct an equal
-                                    knowledge exchange relationship.</p>
-                                <div class="items-center">
-                                    <a href="forbes.html" target="_blank"
-                                        class="uppercase mt-2 inline-flex items-center md:mb-2 lg:mb-0 secondary-button bg-black text-white p-1 transition duration-500 ease-in-out hover:bg-opred hover:text-white transform hover:translate-x-4">Read
-                                        Case
-                                        Study
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
-                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--项目四开始-->
-                    <div class="sm:mt-0 case-study p-8 md:w-1/2">
-                        <div class="h-full overflow-hidden">
-                            <img class="case-study-cover lg:h-96 md:h-64 w-full object-cover object-center"
-                                src="./res/images/forbes.png" alt="blog" draggable="false">
-                            <div class="py-5 mt-2">
-                                <h2 class="tracking-widest tags mb-1 text-black bg-white border border-black">社会交换理论</h2>
-                                <h2 class="tracking-widest tags mb-1 text-black bg-white border border-black">隐喻设计</h2>
-                                <h1 class="mt-4 title">圆桌—大学生知识交流与共享平台</h1>
-                                <p class="leading-relaxed mb-3 subtitle">Based on the social exchange theory, the
-                                    metaphor of "round table" is introduced to help college students construct an equal
-                                    knowledge exchange relationship.</p>
-                                <div class="items-center">
-                                    <a href="forbes.html" target="_blank"
-                                        class="uppercase mt-2 inline-flex items-center md:mb-2 lg:mb-0 secondary-button bg-black text-white p-1 transition duration-500 ease-in-out hover:bg-opred hover:text-white transform hover:translate-x-4">Read
-                                        Case
-                                        Study
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
-                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="divide-y divide-gray-500 container mx-10 mt-20 mb-24">
-                        <div><p class="invisible">&nbsp</p></div>
-                        <div><p class="invisible">&nbsp</p></div>
-                    </div>
-
-                    <div class="text-center md:text-left mx-12 mb-24">
-                        <p class="font2 text-4xl md:text-6xl lg:text-8xl font-semibold tracking-tight">My other works💅</p>
-                        <div class="mt-4">
-                        <p class="font1 text-1xl md:text-4xl lg:text-5xl font-semibold tracking-tight">I also shine at <span class="underline">Industrial Design↗</span> & <span class="underline">Information Visualization↗</span> & <span class="underline">Web Development↗</span>.</p>
-                        </div>
-                    </div>
-
-                    <!--项目五开始-->
-                    <div class="sm:mt-0 case-study p-8 md:w-1/2">
-                        <div class="h-full overflow-hidden">
-                            <img class="case-study-cover lg:h-96 md:h-64 w-full object-cover object-center"
-                                src="./res/images/forbes.png" alt="blog" draggable="false">
-                            <div class="py-5 mt-2">
-                                <h2 class="tracking-widest tags mb-1 text-black bg-white border border-black">社会交换理论</h2>
-                                <h2 class="tracking-widest tags mb-1 text-black bg-white border border-black">隐喻设计</h2>
-                                <h1 class="mt-4 title">圆桌—大学生知识交流与共享平台</h1>
-                                <p class="leading-relaxed mb-3 subtitle">Based on the social exchange theory, the
-                                    metaphor of "round table" is introduced to help college students construct an equal
-                                    knowledge exchange relationship.</p>
-                                <div class="items-center">
-                                    <a href="forbes.html" target="_blank"
-                                        class="uppercase mt-2 inline-flex items-center md:mb-2 lg:mb-0 secondary-button bg-black text-white p-1 transition duration-500 ease-in-out hover:bg-opred hover:text-white transform hover:translate-x-4">Read
-                                        Case
-                                        Study
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
-                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--项目六开始-->
-                    <div class="sm:mt-0 case-study p-8 md:w-1/2">
-                        <div class="h-full overflow-hidden">
-                            <img class="case-study-cover lg:h-96 md:h-64 w-full object-cover object-center"
-                                src="./res/images/forbes.png" alt="blog" draggable="false">
-                            <div class="py-5 mt-2">
-                                <h2 class="tracking-widest tags mb-1 text-black bg-white border border-black">社会交换理论</h2>
-                                <h2 class="tracking-widest tags mb-1 text-black bg-white border border-black">隐喻设计</h2>
-                                <h1 class="mt-4 title">圆桌—大学生知识交流与共享平台</h1>
-                                <p class="leading-relaxed mb-3 subtitle">Based on the social exchange theory, the
-                                    metaphor of "round table" is introduced to help college students construct an equal
-                                    knowledge exchange relationship.</p>
-                                <div class="items-center">
-                                    <a href="forbes.html" target="_blank"
-                                        class="uppercase mt-2 inline-flex items-center md:mb-2 lg:mb-0 secondary-button bg-black text-white p-1 transition duration-500 ease-in-out hover:bg-opred hover:text-white transform hover:translate-x-4">Read
-                                        Case
-                                        Study
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
-                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+        <div class="content col-12 col-md-9">
+          <div class="header">
+            <nav class="navbar navbar-expand-md navbar-light bg-light py-5 g-0">
+              <div class="container">
+                <a href="#page-top"><img class="logo d-md-none" src="img/logo-text.svg" height=30></a>
+                <p class="d-block d-md-none me-auto unstyled pt-3 ps-2">Chvita Zha<br>UX Designer</p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ms-auto">
+                      <a class="nav-link active" aria-current="page" href="index.html">Work</a>
+                    </li>
+                    <li class="nav-item ms-auto">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+            </nav>
+          </div>
+          <div class="main">
+            <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
+              <div class="col">
+                <a href="snackordering.html">
+                  <div class="card text-dark">
+                    <img src="img/COOPY.png" class="card-img rounded-0" alt="...">
+                    <div class="card-img-overlay">
+                      <h2 class="card-title">COOPY—大学生心理健康应用程序</h2><br>
+                      <h5 class="card-text">基于ICBT技术，为处于学习倦怠中的大学生提供高效率、低成本、优体验的心理健康支持服务。</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="wrf.html">
+                  <div class="card text-dark">
+                    <img src="img/BULKER.png" class="card-img rounded-0" alt="...">
+                    <div class="card-img-overlay">
+                      <h2 class="card-title">BULKER—增肌饮食管理应用程序</h2><br>
+                      <h5 class="card-text">基于自我效能理论，帮助增肌者提高自我效能感，重新设计增肌饮食管理体验。</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="bookeducation.html">
+                  <div class="card text-dark">
+                    <img src="img/MUGU.png" class="card-img rounded-0" alt="...">
+                    <div class="card-img-overlay">
+                      <h2 class="card-title">MUGU—语言学习应用程序</h2><br>
+                      <h5 class="card-text">基于情境交互理论，帮助外语学习者在音乐情境中学习语言，并培养学习习惯。</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href=".html">
+                  <div class="card text-dark">
+                    <img src="img/BREGO.png" class="card-img rounded-0" alt="...">
+                    <div class="card-img-overlay">
+                      <h2 class="card-title">BREGO—跑步呼吸辅助产品设计</h2><br>
+                      <h5 class="card-text">基于生理反馈技术，帮助跑步者稳定呼吸节奏，并减少运动中的健康风险。</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href=".html">
+                  <div class="card text-dark">
+                    <img src="img/YUQING.png" class="card-img rounded-0" alt="...">
+                    <div class="card-img-overlay">
+                      <h2 class="card-title">信息可视化设计—普通网民与舆情</h2><br>
+                      <h5 class="card-text">新媒体时代，我们如何衡量普通网民对网络舆情的影响？</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href=".html">
+                  <div class="card text-dark">
+                    <img src="img/COMPET.png" class="card-img rounded-0" alt="...">
+                    <div class="card-img-overlay">
+                      <h2 class="card-title">毕业设计—缓解大学生时间焦虑感的产品设计</h2><br>
+                      <h5 class="card-text">建设中…</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
-        </section>
-
+          </div>
+          <div class="footer py-5 mb-5">
+              <ul class="list-inline d-flex">
+                <li class="list-inline-item"><a href="mailto:alstonchvita@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a></li>
+                <li class="list-inline-item"><a href="https://github.com/ChvitaZha" target="_blank"><i class="bi bi-github"></i></a></li>
+                <li class="list-inline-item ms-auto"> &copy; Chvita Zha 2023</li>
+              </ul>
+          </div>
+        </div>
+        <div class="sidebar-2 d-none d-md-block col-md">
+          
+        </div>
+     </div>
     </div>
 
-    <script src="./script/script.js"></script>
-</body>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+  </body>
 </html>
