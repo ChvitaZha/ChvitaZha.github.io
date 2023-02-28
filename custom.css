@@ -50,6 +50,19 @@ text-decoration: underline;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* 添加动画效果 */
 }
 
+.resume-link {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .resume-link img {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .resume-link:hover img {
+    transform: translate(-5px, -5px);
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 20px 50px;
+  }
 
 .bi {
     font-size: 1.75rem;
@@ -66,15 +79,15 @@ text-decoration: underline;
 
 .sidebar {
     font-size: 13px;   
-    color:#6f7973;
+    color:#777777;
 }
 
 .sidebar .list-group-item {
-    color: #6f7973;
+    color: #777777;
 }
 
 .sidebar .list-group-item h6 {
-    color:#1b1b1b;
+    color:#141414;
 }
 
  
@@ -87,13 +100,11 @@ text-decoration: underline;
 }
 
 .btn-primary {
-    background-color: #4c6358;
-    border: #4c6358;
+    background-color: #646464;
 } 
 
 .btn-primary:hover, .btn-primary:focus {
-    background-color: #404944;
-    border-color: #404944;
+    background-color: #464646;
 }
 
 .tan {
@@ -101,8 +112,7 @@ text-decoration: underline;
 }
 
 .list-group-item.active {
-    background-color: #21352c;
-    border: #21352c;
+    background-color: #000000;
     color: #FFFFFF;
 }
 
