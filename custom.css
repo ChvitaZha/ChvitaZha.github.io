@@ -135,3 +135,12 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 13px;
     letter-spacing: 0.4px;
 }
+
+.zoom-on-hover {
+    transition: transform 0.5s;
+  }
+  
+  .zoom-on-hover:hover {
+    transform: scale(1.05);
+    cursor: zoom-in;
+  }
