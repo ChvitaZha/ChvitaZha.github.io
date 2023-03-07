@@ -136,6 +136,14 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 0.4px;
 }
 
+.p2 {
+    font-size: 14px;
+  }
+
+p {
+    font-size: 18px; /*改变字体大小*/
+  }
+
 .zoom-on-hover {
     transition: transform 0.5s;
   }
@@ -143,4 +151,38 @@ h1,h2,h3,h4,h5,h6 {
   .zoom-on-hover:hover {
     transform: scale(1.05);
     cursor: zoom-in;
+  }
+
+.my-list {
+    list-style: none; /*隐藏默认的列表样式*/
+    padding-left: 0; /*去除默认的内边距*/
+    font-size: 18px; /*设置字体大小为18像素*/
+    line-height: 2; /*设置行高为1.5倍的字体大小*/
+  }
+  
+.my-list li {
+    border-left: 3px solid black; /*添加竖线样式*/
+    padding-left: 16px; /*为文本添加一些内边距*/
+  }
+
+  .dropdown-menu {
+    background-color: #ffffff;
+    color: #000000;
+    
+  }
+  
+  .dropdown-toggle {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 100px; /* 设置圆角 */
+    border: none;
+    width: 72px;
+    height: 36px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+  }
+
+
+  .dropdown {
+    display: flex;
+    justify-content: center;
   }
