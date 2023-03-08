@@ -21,6 +21,61 @@
   <!-- 引入刚刚下载的 ECharts 文件 -->
   <script src="echarts.js"></script>
 
+<!-- 预加载页面css -->
+<style>
+  /* CSS for progress bar */
+  #progress-bar {
+    width: 50%;
+    height: 12px;
+    background-color: #ddd;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 9999;
+  }
+  #progress {
+    width: 0%;
+    height: 100%;
+    background-color: #ff5e00;
+    border-radius: 12px;
+  }
+  /* CSS for loading text */
+  #loading-text {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    text-align: center;
+  }
+  /* CSS for preload page */
+  #preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9998;
+  }
+  /* CSS to hide preload page */
+  #preload.loaded {
+    display: none;
+  }
+  /* CSS for progress text */
+  #progress-text {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+</style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#case-study-list" data-bs-offset="150" tabindex="0">
@@ -921,7 +976,6 @@
             <li class="list-inline-item ms-auto"> &copy; Chvita Zha 2023</li>
           </ul>
         </div>
-
       </div>
     </div>
   </div>
@@ -932,6 +986,42 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
+
+<!-- Preload page -->
+<div id="preload">
+  <div id="loading-text">
+    Loading…
+  </div>
+  <div id="progress-bar">
+    <div id="progress"></div>
+  </div>
+  <div id="progress-text">
+    0%
+  </div>
+</div>
+<!-- Actual interface -->
+<div id="interface">
+  <!-- Your actual interface code here -->
+</div>
+<script>
+  // Update progress bar and text
+  function updateProgressBar() {
+    const progressBar = document.getElementById('progress');
+    const progressText = document.getElementById('progress-text');
+    let progress = 0;
+    const intervalId = setInterval(() => {
+      progress += Math.floor(Math.random() * 10);
+      if (progress >= 100) {
+        clearInterval(intervalId);
+        document.getElementById('preload').classList.add('loaded');
+      }
+      progressBar.style.width = `${progress}%`;
+      progressText.innerText = `${progress}%`;
+    }, 500);
+  }
+  // Call updateProgressBar() when the window is loaded
+  window.addEventListener('load', updateProgressBar);
+</script>
 </body>
 
 </html>
