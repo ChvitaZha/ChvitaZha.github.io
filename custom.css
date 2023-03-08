@@ -12,7 +12,7 @@
 }
 
 .nav-item a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 .logo {
@@ -32,37 +32,42 @@ text-decoration: underline;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(255, 255, 255, 0.6); /* 添加背景颜色并设置透明度 */
-    backdrop-filter: blur(16px); /* 添加模糊效果 */
+    background-color: rgba(255, 255, 255, 0.6);
+    /* 添加背景颜色并设置透明度 */
+    backdrop-filter: blur(16px);
+    /* 添加模糊效果 */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .card:hover .card-img-overlay {
-    opacity: 1;
-  }
+}
 
-  .card:hover {
-    box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.05); /* 添加投影效果 */
-    transform: translate(0px, -10px); /* 卡片向左上方偏移5像素 */
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* 添加动画效果 */
+.card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.card:hover {
+    box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.05);
+    /* 添加投影效果 */
+    transform: translate(0px, -10px);
+    /* 卡片向左上方偏移5像素 */
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /* 添加动画效果 */
 }
 
 .resume-link {
     display: inline-block;
     position: relative;
-  }
-  
-  .resume-link img {
+}
+
+.resume-link img {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  }
-  
-  .resume-link:hover img {
+}
+
+.resume-link:hover img {
     transform: translate(-5px, -5px);
     box-shadow: rgba(0, 0, 0, 0.1) 10px 20px 50px;
-  }
+}
 
 .bi {
     font-size: 1.75rem;
@@ -78,8 +83,8 @@ text-decoration: underline;
 }
 
 .sidebar {
-    font-size: 13px;   
-    color:#777777;
+    font-size: 13px;
+    color: #777777;
 }
 
 .sidebar .list-group-item {
@@ -87,10 +92,10 @@ text-decoration: underline;
 }
 
 .sidebar .list-group-item h6 {
-    color:#141414;
+    color: #141414;
 }
 
- 
+
 .primary {
     color: #006c4d;
 }
@@ -101,9 +106,10 @@ text-decoration: underline;
 
 .btn-primary {
     background-color: #646464;
-} 
+}
 
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover,
+.btn-primary:focus {
     background-color: #464646;
 }
 
@@ -117,7 +123,7 @@ text-decoration: underline;
 }
 
 body {
-    
+
     color: #1b1b1b;
 }
 
@@ -127,8 +133,13 @@ p {
     letter-spacing: 0.25px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-   font-family: 'Bebas Neue', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .caption {
@@ -138,51 +149,63 @@ h1,h2,h3,h4,h5,h6 {
 
 .p2 {
     font-size: 14px;
-  }
+}
 
 p {
-    font-size: 18px; /*改变字体大小*/
-  }
+    font-size: 18px;
+    /*改变字体大小*/
+}
 
 .zoom-on-hover {
     transition: transform 0.5s;
-  }
-  
-  .zoom-on-hover:hover {
+}
+
+.zoom-on-hover:hover {
     transform: scale(1.05);
     cursor: zoom-in;
-  }
+}
 
 .my-list {
-    list-style: none; /*隐藏默认的列表样式*/
-    padding-left: 0; /*去除默认的内边距*/
-    font-size: 18px; /*设置字体大小为18像素*/
-    line-height: 2; /*设置行高为1.5倍的字体大小*/
-  }
-  
-.my-list li {
-    border-left: 3px solid black; /*添加竖线样式*/
-    padding-left: 16px; /*为文本添加一些内边距*/
-  }
+    list-style: none;
+    /*隐藏默认的列表样式*/
+    padding-left: 0;
+    /*去除默认的内边距*/
+    font-size: 18px;
+    /*设置字体大小为18像素*/
+    line-height: 2;
+    /*设置行高为1.5倍的字体大小*/
+}
 
-  .dropdown-menu {
+.my-list li {
+    border-left: 3px solid black;
+    /*添加竖线样式*/
+    padding-left: 16px;
+    /*为文本添加一些内边距*/
+}
+
+.dropdown-menu {
     background-color: #ffffff;
     color: #000000;
-    
-  }
-  
-  .dropdown-toggle {
+
+}
+
+.dropdown-toggle {
     background-color: #ffffff;
     color: #000000;
-    border-radius: 100px; /* 设置圆角 */
+    border-radius: 100px;
+    /* 设置圆角 */
     border: none;
     width: 72px;
     height: 36px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
-  }
+}
 
 
-  .dropdown {
+.dropdown {
     display: flex;
     justify-content: center;
-  }
+}
+
+h3 {
+    font-weight: bold
+}
