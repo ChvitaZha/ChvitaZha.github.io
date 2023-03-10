@@ -20,6 +20,8 @@
 
   <!-- 引入刚刚下载的 ECharts 文件 -->
   <script src="echarts.js"></script>
+
+  
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#case-study-list" data-bs-offset="150" tabindex="0">
@@ -929,6 +931,51 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+
+  <script>
+
+const navLinks = document.querySelectorAll('#case-study-list a');
+
+// Add a click event listener to each link
+navLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    // Prevent the default link behavior
+    event.preventDefault();
+
+    // Get the section that corresponds to the link
+    const section = document.querySelector(link.hash);
+
+    // Scroll to the section
+    window.scrollTo({
+      top: section.offsetTop - 80,
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Listen for the scroll event on the window
+window.addEventListener('scroll', () => {
+  // Get the current scroll position
+  const currentScrollPos = window.pageYOffset;
+
+  // Loop through all the links in the navigation bar
+  navLinks.forEach(link => {
+    // Get the section that corresponds to the link
+    const section = document.querySelector(link.hash);
+
+    // Check if the section is currently in view
+    if (section.offsetTop - 100 <= currentScrollPos && currentScrollPos <= section.offsetTop + section.offsetHeight - 100) {
+      // Add the active class to the link
+      navLinks.forEach(link => link.classList.remove('active'));
+      link.classList.add('active');
+    } else {
+      // Remove the active class from the link
+      link.classList.remove('active');
+    }
+  });
+});
+  </script>
+    
 </body>
 
 </html>
