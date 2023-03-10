@@ -21,6 +21,7 @@
   <!-- 引入刚刚下载的 ECharts 文件 -->
   <script src="echarts.js"></script>
 
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
   
 </head>
 
@@ -70,14 +71,10 @@
             <div class="col-md-10">
               <div class="col-12 px-3 py-4" id="list-item-1">
                 <div class="row d-flex align-items-center">
-                  <div class="col-12 text-center">
+                  <div class="col-12 text-center pb-4">
                     <img class="img-fluid max-width: 100%; height: auto;" src="img/bulker/banner.png">
                   </div>
-                </div>
-              </div>
-              <div class="col-12 px-3 py-4" id="list-item-1">
-                <div class="row d-flex align-items-center">
-                  <div class="col-12">
+                  <div class="col-12 pt-4">
                     <h3 class="pb-3">&#x270D;关于项目</h3>
                     <p style="line-height: 2;">
                       饮食管理是增肌过程中不可或缺的重要环节，对增肌结果起着决定性作用。然而，现今的APP大多面向减脂场景，缺乏针对增肌场景的考虑，这使得增肌者常常缺乏针对性的资源和支持。Bulker是一款基于对话式AI技术的饮食管理应用程序，通过与人工智能Bulker进行对话，即可智能生成饮食计划，只需要按照计划执行即可准确摄入每日所需能量。此外，Bulker还提供社交和知识支持，以帮助用户更好地理解健身术语和概念，寻找“健身搭子”，共同实现增肌饮食目标。
@@ -102,14 +99,10 @@
                         href="https://www.blkboxgym.com/blog/dirty-bulk-vs-clean-bulk-which-one-is-better"
                         target=“_blank”>[1]</a>。</p>
                   </div>
-                  <div class="col-12 text-center">
+                  <div class="col-12 text-center pb-4">
                     <img class="img-fluid max-width: 100%; height: auto;" src="img/bulker/wentichenshu.png">
                   </div>
-                </div>
-              </div>
-              <div class="col-12 px-3 py-4" id="list-item-2">
-                <div class="row">
-                  <div class="col-12">
+                  <div class="col-12 pt-4">
                     <h3 class="pb-3">&#x23F1;研究计划</h3>
                     <p style="line-height: 2;">
                       明确了问题的大致范围后，我制定了适合本次设计研究与实践的完整计划：<br>
@@ -933,19 +926,14 @@
     crossorigin="anonymous"></script>
 
   <script>
-
 const navLinks = document.querySelectorAll('#case-study-list a');
 
-// Add a click event listener to each link
 navLinks.forEach(link => {
   link.addEventListener('click', event => {
-    // Prevent the default link behavior
     event.preventDefault();
 
-    // Get the section that corresponds to the link
     const section = document.querySelector(link.hash);
 
-    // Scroll to the section
     window.scrollTo({
       top: section.offsetTop - 80,
       behavior: 'smooth'
@@ -953,24 +941,26 @@ navLinks.forEach(link => {
   });
 });
 
-// Listen for the scroll event on the window
 window.addEventListener('scroll', () => {
-  // Get the current scroll position
   const currentScrollPos = window.pageYOffset;
+  const pageBottom = document.body.scrollHeight - window.innerHeight;
 
-  // Loop through all the links in the navigation bar
-  navLinks.forEach(link => {
-    // Get the section that corresponds to the link
+  navLinks.forEach((link, index) => {
     const section = document.querySelector(link.hash);
+    const sectionTop = section.offsetTop - 100;
+    const sectionBottom = sectionTop + section.offsetHeight;
 
-    // Check if the section is currently in view
-    if (section.offsetTop - 100 <= currentScrollPos && currentScrollPos <= section.offsetTop + section.offsetHeight - 100) {
-      // Add the active class to the link
+    if (sectionTop <= currentScrollPos && currentScrollPos < sectionBottom) {
       navLinks.forEach(link => link.classList.remove('active'));
       link.classList.add('active');
     } else {
-      // Remove the active class from the link
       link.classList.remove('active');
+    }
+
+    // 特殊处理最后一个章节
+    if (index === navLinks.length - 1 && currentScrollPos >= pageBottom - 100) {
+      navLinks.forEach(link => link.classList.remove('active'));
+      link.classList.add('active');
     }
   });
 });
