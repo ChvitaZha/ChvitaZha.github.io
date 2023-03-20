@@ -183,6 +183,16 @@ p {
     /*为文本添加一些内边距*/
 }
 
+.my-list2 li {
+    list-style-type: disc;
+    margin-left: 0px; /* 8px圆点半径 + 32px宽度 */
+    padding-left: 12px;
+    font-size: 18px;
+    /*设置字体大小为18像素*/
+    line-height: 2;
+    /*设置行高为1.5倍的字体大小*/
+  }
+
 .dropdown-menu {
     background-color: #ffffff;
     color: #000000;
@@ -210,3 +220,7 @@ h3 {
     font-weight: bold
 }
 
+.card-text {
+    font-size: 18px;
+    line-height: 1.8;
+  }
