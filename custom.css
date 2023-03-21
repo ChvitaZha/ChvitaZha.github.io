@@ -32,9 +32,9 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.85);
     /* 添加背景颜色并设置透明度 */
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(64px);
     /* 添加模糊效果 */
     display: flex;
     flex-direction: column;
@@ -172,7 +172,7 @@ p {
     /*去除默认的内边距*/
     font-size: 18px;
     /*设置字体大小为18像素*/
-    line-height: 2;
+    line-height: 2.25;
     /*设置行高为1.5倍的字体大小*/
 }
 
@@ -223,4 +223,5 @@ h3 {
 .card-text {
     font-size: 18px;
     line-height: 1.8;
+    color:rgba(0, 0, 0, 0.5)
   }
