@@ -33,7 +33,7 @@
         <div class="logo sticky-top">
           <a href="index.html"><img src="img/logo-text.svg" class="primary" height=75></a>
           <p class="pt-3 mb-0 fs-5 fw-bold">Chvita Zha</p>
-          <p class="pt-1 p2">UX Designer interested in<br>
+          <p class="pt-1 p2">UI/UX Designer interested in<br>
             <span class="text-decoration-underline">Media Ecology</span> and<br>
             <span class="text-decoration-underline">Cognitive Psychology</span>
           </p>
@@ -227,371 +227,8 @@
                       最终回收问卷62份，其中，自我效能较低的样本数量为46人。经过定性分析，以上四项假设均能得到一定的验证。具体数据如下：
                     </p>
                   </div>
-                  <div style="background-color: #f9f9f9; width: 100%; margin: 0 10px;">
-                    <div class="container mt-3">
-                      <div class="row">
-                        <div class="col-md-6 offset-md-3">
-                          <div class="dropdown mb-3">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                              data-bs-toggle="dropdown" aria-expanded="false">
-                              Q1
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <li><a class="dropdown-item" href="#" data-pie="1" onclick="updateButtonText('Q1')">Q1</a>
-                              </li>
-                              <li><a class="dropdown-item" href="#" data-pie="2" onclick="updateButtonText('Q2')">Q2</a>
-                              </li>
-                              <li><a class="dropdown-item" href="#" data-pie="3" onclick="updateButtonText('Q3')">Q3</a>
-                              </li>
-                              <li><a class="dropdown-item" href="#" data-pie="4" onclick="updateButtonText('Q4')">Q4</a>
-                              </li>
-                              <li><a class="dropdown-item" href="#" data-pie="5" onclick="updateButtonText('Q5')">Q5</a>
-                              </li>
-                              <li><a class="dropdown-item" href="#" data-pie="6" onclick="updateButtonText('Q6')">Q6</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div id="chart" style="height: 350px;"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <script>
-                      function updateButtonText(text) {
-                        var dropdownBtn = document.getElementById("dropdownMenuButton");
-                        dropdownBtn.textContent = text;
-                      }
-                      // Define the pie chart data
-                      var pie1 = {
-                        title: {
-                          text: '我了解过增肌饮食管理',
-                          left: 'center',
-                          top: 10,
-                          textStyle: {
-                            color: '#000000',
-                            fontSize: 18,
-                            fontWeight: 'bold'
-                          }
-                        },
-                        tooltip: {
-                          trigger: 'item',
-                          formatter: "{b}：{c}人，{d}%"
-                        },
-                        color: ['#fdebd0', '#f9ccac', '#f39c6b', '#e74c3c'], // 指定颜色
-                        series: [{
-                          name: '既符合',
-                          type: 'pie',
-                          radius: '55%',
-                          center: ['50%', '50%'],
-                          data: [
-                            { value: 8, name: '极符合' },
-                            { value: 12, name: '符合' },
-                            { value: 18, name: '不符合' },
-                            { value: 8, name: '极不符合' },
-                          ],
-                          label: { // 修改标签文字样式
-                            fontSize: 14,
-                            color: '#000000'
-                          },
-                          labelLine: { // 显示标签的视觉引导线
-                            show: true,
-                            length: 10,
-                            length2: 15,
-                            lineStyle: {
-                              color: '#000000',
-                              width: 1
-                            }
-                          },
-                          itemStyle: { // 饼图每块区域的样式
-                            borderColor: '#f9f9f9',
-                            borderWidth: 2,
-                            borderType: 'solid',
-                            borderRadius: 8
-                          }
-                        }]
-                      };
-
-                      var pie2 = {
-                        title: {
-                          text: '我以前进行过增肌饮食管理，并取得了成功',
-                          left: 'center',
-                          top: 10,
-                          textStyle: {
-                            color: '#000000',
-                            fontSize: 18,
-                            fontWeight: 'bold'
-                          }
-                        },
-                        tooltip: {
-                          trigger: 'item',
-                          formatter: "{b}：{c}人，{d}%"
-                        },
-                        color: ['#fdebd0', '#f9ccac', '#f39c6b', '#e74c3c'], // 指定颜色
-                        series: [{
-                          name: '既符合',
-                          type: 'pie',
-                          radius: '55%',
-                          center: ['50%', '50%'],
-                          data: [
-                            { value: 4, name: '极符合' },
-                            { value: 6, name: '符合' },
-                            { value: 18, name: '不符合' },
-                            { value: 18, name: '极不符合' },
-                          ],
-                          label: { // 修改标签文字样式
-                            fontSize: 14,
-                            color: '#000000'
-                          },
-                          labelLine: { // 显示标签的视觉引导线
-                            show: true,
-                            length: 10,
-                            length2: 15,
-                            lineStyle: {
-                              color: '#000000',
-                              width: 1
-                            }
-                          },
-                          itemStyle: { // 饼图每块区域的样式
-                            borderColor: '#f9f9f9',
-                            borderWidth: 2,
-                            borderType: 'solid',
-                            borderRadius: 8
-                          }
-                        }]
-                      };
-
-                      var pie3 = {
-                        title: {
-                          text: '我知道从哪里学习增肌饮食管理',
-                          left: 'center',
-                          top: 10,
-                          textStyle: {
-                            color: '#000000',
-                            fontSize: 18,
-                            fontWeight: 'bold'
-                          }
-                        },
-                        tooltip: {
-                          trigger: 'item',
-                          formatter: "{b}：{c}人，{d}%"
-                        },
-                        color: ['#fdebd0', '#f9ccac', '#f39c6b', '#e74c3c'], // 指定颜色
-                        series: [{
-                          name: '既符合',
-                          type: 'pie',
-                          radius: '55%',
-                          center: ['50%', '50%'],
-                          data: [
-                            { value: 4, name: '极符合' },
-                            { value: 12, name: '符合' },
-                            { value: 16, name: '不符合' },
-                            { value: 14, name: '极不符合' },
-                          ],
-                          label: { // 修改标签文字样式
-                            fontSize: 14,
-                            color: '#000000'
-                          },
-                          labelLine: { // 显示标签的视觉引导线
-                            show: true,
-                            length: 10,
-                            length2: 15,
-                            lineStyle: {
-                              color: '#000000',
-                              width: 1
-                            }
-                          },
-                          itemStyle: { // 饼图每块区域的样式
-                            borderColor: '#f9f9f9',
-                            borderWidth: 2,
-                            borderType: 'solid',
-                            borderRadius: 8
-                          }
-                        }]
-                      };
-                      // Define the data for pie chart 4
-                      var pie4 = {
-                        title: {
-                          text: '我看到过别人成功实现了增肌饮食管理',
-                          left: 'center',
-                          top: 10,
-                          textStyle: {
-                            color: '#000000',
-                            fontSize: 18,
-                            fontWeight: 'bold'
-                          }
-                        },
-                        tooltip: {
-                          trigger: 'item',
-                          formatter: "{b}：{c}人，{d}%"
-                        },
-                        color: ['#fdebd0', '#f9ccac', '#f39c6b', '#e74c3c'], // 指定颜色
-                        series: [{
-                          name: '既符合',
-                          type: 'pie',
-                          radius: '55%',
-                          center: ['50%', '50%'],
-                          data: [
-                            { value: 6, name: '极符合' },
-                            { value: 12, name: '符合' },
-                            { value: 18, name: '不符合' },
-                            { value: 10, name: '极不符合' },
-                          ],
-                          label: { // 修改标签文字样式
-                            fontSize: 14,
-                            color: '#000000'
-                          },
-                          labelLine: { // 显示标签的视觉引导线
-                            show: true,
-                            length: 10,
-                            length2: 15,
-                            lineStyle: {
-                              color: '#000000',
-                              width: 1
-                            }
-                          },
-                          itemStyle: { // 饼图每块区域的样式
-                            borderColor: '#f9f9f9',
-                            borderWidth: 2,
-                            borderType: 'solid',
-                            borderRadius: 8
-                          }
-                        }]
-                      };
-                      // Define the data for pie chart 5
-
-                      var pie5 = {
-                        title: {
-                          text: '我会因为别人的鼓励而更努力进行增肌饮食管理',
-                          left: 'center',
-                          top: 10,
-                          textStyle: {
-                            color: '#000000',
-                            fontSize: 18,
-                            fontWeight: 'bold'
-                          }
-                        },
-                        tooltip: {
-                          trigger: 'item',
-                          formatter: "{b}：{c}人，{d}%"
-                        },
-                        color: ['#fdebd0', '#f9ccac', '#f39c6b', '#e74c3c'], // 指定颜色
-                        series: [{
-                          name: '既符合',
-                          type: 'pie',
-                          radius: '55%',
-                          center: ['50%', '50%'],
-                          data: [
-                            { value: 12, name: '极符合' },
-                            { value: 22, name: '符合' },
-                            { value: 6, name: '不符合' },
-                            { value: 6, name: '极不符合' },
-                          ],
-                          label: { // 修改标签文字样式
-                            fontSize: 14,
-                            color: '#000000'
-                          },
-                          labelLine: { // 显示标签的视觉引导线
-                            show: true,
-                            length: 10,
-                            length2: 15,
-                            lineStyle: {
-                              color: '#000000',
-                              width: 1
-                            }
-                          },
-                          itemStyle: { // 饼图每块区域的样式
-                            borderColor: '#f9f9f9',
-                            borderWidth: 2,
-                            borderType: 'solid',
-                            borderRadius: 8
-                          }
-                        }]
-                      };
-
-                      var pie6 = {
-                        title: {
-                          text: '我不存在生理上的饮食困难（如胃口小、厌食等）',
-                          left: 'center',
-                          top: 10,
-                          textStyle: {
-                            color: '#000000',
-                            fontSize: 18,
-                            fontWeight: 'bold'
-                          }
-                        },
-                        tooltip: {
-                          trigger: 'item',
-                          formatter: "{b}：{c}人，{d}%"
-                        },
-                        color: ['#fdebd0', '#f9ccac', '#f39c6b', '#e74c3c'], // 指定颜色
-                        series: [{
-                          name: '既符合',
-                          type: 'pie',
-                          radius: '55%',
-                          center: ['50%', '50%'],
-                          data: [
-                            { value: 4, name: '极符合' },
-                            { value: 8, name: '符合' },
-                            { value: 20, name: '不符合' },
-                            { value: 14, name: '极不符合' },
-                          ],
-                          label: { // 修改标签文字样式
-                            fontSize: 14,
-                            color: '#000000'
-                          },
-                          labelLine: { // 显示标签的视觉引导线
-                            show: true,
-                            length: 10,
-                            length2: 15,
-                            lineStyle: {
-                              color: '#000000',
-                              width: 1
-                            }
-                          },
-                          itemStyle: { // 饼图每块区域的样式
-                            borderColor: '#f9f9f9',
-                            borderWidth: 2,
-                            borderType: 'solid',
-                            borderRadius: 8
-                          }
-                        }]
-                      };
-                      // Initialize the chart
-                      var chart = echarts.init(document.getElementById('chart'));
-
-                      // Show the initial pie chart
-                      chart.setOption(pie1);
-
-                      // Add event listener to the dropdown menu
-                      document.querySelectorAll('.dropdown-item').forEach(function (item) {
-                        item.addEventListener('click', function (event) {
-                          event.preventDefault(); // Prevent the default link behavior
-                          var pieIndex = this.dataset.pie;
-                          switch (pieIndex) {
-                            case '1':
-                              chart.setOption(pie1);
-                              break;
-                            case '2':
-                              chart.setOption(pie2);
-                              break;
-                            case '3':
-                              chart.setOption(pie3);
-                              break;
-                            case '4':
-                              chart.setOption(pie4);
-                              break;
-                            case '5':
-                              chart.setOption(pie5);
-                              break;
-                            case '6':
-                              chart.setOption(pie6);
-                              break;
-                            default:
-                              break;
-                          }
-                        });
-                      });
-
-                    </script>
+                  <div class="col-12 text-center">
+                    <img class="img-fluid max-width: 100%; height: auto;" src="img/bulker/questionaresult.png">
                   </div>
                   <div class="col-12 mt-3">
                     <p style="line-height: 2;">
@@ -753,12 +390,14 @@
                     </ul>
                   </div>
                   <div class="col-12">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700" src="https://www.figma.com/proto/KSmYSccH6lnbHKuVN7i9Lj/%E6%99%BA%E8%83%BD%E8%AE%A1%E5%88%92?embed_host=share&kind=&node-id=1%3A9&scaling=scale-down&starting-point-node-id=1%253A9" allowfullscreen></iframe>
+                    <div class="col-12 text-center my-2">
+                      <img class="img-fluid max-width: 100%; height: auto;" src="img/bulker/solution1.png">
+                    </div>
                     <div class="d-flex justify-content-center align-items-center pt-2">
-                      <p>如果加载失败，您可以<a href="https://www.figma.com/proto/KSmYSccH6lnbHKuVN7i9Lj/%E6%99%BA%E8%83%BD%E8%AE%A1%E5%88%92?embed_host=share&kind=&node-id=1%3A9&scaling=scale-down&starting-point-node-id=1%253A9" target="_blank">点击这里查看原型</a>。</p>
+                      <p>您可以<a href="https://www.figma.com/proto/KSmYSccH6lnbHKuVN7i9Lj/%E6%99%BA%E8%83%BD%E8%AE%A1%E5%88%92?embed_host=share&kind=&node-id=1%3A9&scaling=scale-down&starting-point-node-id=1%253A9" target="_blank">点击这里体验交互原型</a></p>
                     </div>
                   </div>
-                  <div class="col-12 mt-3">
+                  <div class="col-12">
                     <p style="line-height: 2;">
                       <strong style="font-size:20px">用户测试反馈：</strong>
                     </p>
@@ -790,12 +429,13 @@
                     </ul>
                   </div>
                   <div class="col-12">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700" src="https://www.figma.com/proto/w0X4gY89f97iQcgEVc9l0n/%E4%BB%8A%E6%97%A5%E8%AE%A1%E5%88%92?embed_host=share&kind=&node-id=1%3A96&scaling=scale-down&starting-point-node-id=1%253A96" allowfullscreen></iframe>
-                    <div class="d-flex justify-content-center align-items-center pt-2">
-                      <p>如果加载失败，您可以<a href="https://www.figma.com/proto/w0X4gY89f97iQcgEVc9l0n/%E4%BB%8A%E6%97%A5%E8%AE%A1%E5%88%92?embed_host=share&kind=&node-id=1%3A96&scaling=scale-down&starting-point-node-id=1%253A96" target="_blank">点击这里查看原型</a>。</p>
+                    <div class="col-12 text-center my-2">
+                      <img class="img-fluid max-width: 100%; height: auto;" src="img/bulker/solution2.png">
+                    </div>                    <div class="d-flex justify-content-center align-items-center pt-2">
+                      <p>您可以<a href="https://www.figma.com/proto/w0X4gY89f97iQcgEVc9l0n/%E4%BB%8A%E6%97%A5%E8%AE%A1%E5%88%92?embed_host=share&kind=&node-id=1%3A96&scaling=scale-down&starting-point-node-id=1%253A96" target="_blank">点击这里体验交互原型</a></p>
                     </div>
                   </div>
-                  <div class="col-12 mt-3">
+                  <div class="col-12">
                     <p style="line-height: 2;">
                       <strong style="font-size:20px">用户测试反馈：</strong>
                     </p>
@@ -827,12 +467,14 @@
                     </ul>
                   </div>
                   <div class="col-12">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700" src="https://www.figma.com/proto/DQDKgABAPS44WWcd6j3pzo/%E7%9F%A5%E8%AF%86%E5%B9%BF%E5%9C%BA?embed_host=share&kind=&node-id=2%3A477&scaling=scale-down&starting-point-node-id=2%253A477" allowfullscreen></iframe>
+                    <div class="col-12 text-center my-2">
+                      <img class="img-fluid max-width: 100%; height: auto;" src="img/bulker/solution3.png">
+                    </div>
                     <div class="d-flex justify-content-center align-items-center pt-2">
-                      <p>如果加载失败，您可以<a href="https://www.figma.com/proto/DQDKgABAPS44WWcd6j3pzo/%E7%9F%A5%E8%AF%86%E5%B9%BF%E5%9C%BA?embed_host=share&kind=&node-id=2%3A477&scaling=scale-down&starting-point-node-id=2%253A477" target="_blank">点击这里查看原型</a>。</p>
+                      <p>您可以<a href="https://www.figma.com/proto/DQDKgABAPS44WWcd6j3pzo/%E7%9F%A5%E8%AF%86%E5%B9%BF%E5%9C%BA?embed_host=share&kind=&node-id=2%3A477&scaling=scale-down&starting-point-node-id=2%253A477" target="_blank">点击这里体验交互原型</a></p>
                     </div>
                   </div>
-                  <div class="col-12 mt-3">
+                  <div class="col-12">
                     <p style="line-height: 2;">
                       <strong style="font-size:20px">用户测试反馈：</strong>
                     </p>
@@ -862,12 +504,14 @@
                     </ul>
                   </div>
                   <div class="col-12">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700" src="https://www.figma.com/proto/3c1OvZGWx4ZvVqLGedkUIR/%E8%AF%9D%E9%A2%98%E5%B9%BF%E5%9C%BA?embed_host=share&kind=&node-id=1%3A150&scaling=scale-down" allowfullscreen></iframe>
+                    <div class="col-12 text-center my-2">
+                      <img class="img-fluid max-width: 100%; height: auto;" src="img/bulker/solution4.png">
+                    </div>
                     <div class="d-flex justify-content-center align-items-center pt-2">
-                      <p>如果加载失败，您可以<a href="https://www.figma.com/proto/3c1OvZGWx4ZvVqLGedkUIR/%E8%AF%9D%E9%A2%98%E5%B9%BF%E5%9C%BA?embed_host=share&kind=&node-id=1%3A150&scaling=scale-down" target="_blank">点击这里查看原型</a>。</p>
+                      <p>您可以<a href="https://www.figma.com/proto/3c1OvZGWx4ZvVqLGedkUIR/%E8%AF%9D%E9%A2%98%E5%B9%BF%E5%9C%BA?embed_host=share&kind=&node-id=1%3A150&scaling=scale-down" target="_blank">点击这里体验交互原型</a></p>
                     </div>
                   </div>
-                  <div class="col-12 mt-3">
+                  <div class="col-12">
                     <p style="line-height: 2;">
                       <strong style="font-size:20px">用户测试反馈：</strong>
                     </p>

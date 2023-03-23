@@ -32,7 +32,7 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.5);
     /* 添加背景颜色并设置透明度 */
     backdrop-filter: blur(64px);
     /* 添加模糊效果 */
