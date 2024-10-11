@@ -1,137 +1,56 @@
-<div align="center">
+<p align="center">
+  <img src="/public/favicon.svg" width="50" alt="Logo" />
+</p>
+<h1 align="center">Personal portfolio</h1>
 
-<h1 style="border-bottom: none">
-    <b><a href="https://ivansaul.github.io/personal-portfolio">Personal Portfolio - Developer</a></b>
-</h1>
+[![Site preview](/public/site-preview.png)](https://hamishw.com)
 
-**`Personal Portfolio`** is a fully responsive personal developer portfolio single-page website, <br/>
-responsive for all devices, built using **`HTML`**, **`CSS`**, **`JavaScript`**, and **`Python`**.
+My design portfolio to showcase a few projects. Built with [Remix](https://remix.run/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). View the [live site](https://hamishw.com) or check out a live version of the [components storybook](https://storybook.hamishw.com).
 
-![Made-with-python](https://img.shields.io/badge/Made%20with-Python-orange)
-[![Jinja](https://github.com/ivansaul/personal-portfolio/actions/workflows/jinja.yml/badge.svg)](https://github.com/ivansaul/personal-portfolio/actions/workflows/jinja.yml)
-![GitHub repo size](https://img.shields.io/github/repo-size/ivansaul/personal-portfolio)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Install & run
 
-![GitHub stars][github-stars]
-![GitHub forks][github-forks]
-
-<a href="https://discord.gg/tDvybtJ7y9">
-    <img alt="Discord Server" height="50" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/social/discord-plural_vector.svg">
-</a>
-
-</div>
-
----
-
-<div align="center">
-
-![Demo][demo]
-**`Live Demo:`** 👉🏽 [personal-portfolio.github.io][devfolio]
-
-</div>
-
-## **How to make it yours?**
-
-### Step 1
-
-Fork this project and rename the repo to `your_github_username.github.io`.
-
-> [!IMPORTANT]
-> For example, if your GitHub username is `ivansaul`. Rename the repository to `ivansaul.github.io`
-
-### Step 2
-
-Enable GitHub Pages on:
-
-`Repository(Settings) > Pages > Build and deployment > Source(GitHub Actions)`
-
-### Step 3
-
-Enable workflows:
-
-`Repository(Actions) > I understand my workflows, go ahead and enable them`
-
-### Step 4
-
-Go to the `config/` folder and replace the default data with your personal information.
+Make sure you have nodejs `19.9.0` or higher and npm `9.6.3` or higher installed. Install dependencies with:
 
 ```bash
-config
-|-- assets
-|   |-- avatars
-|   |-- icons
-|   |-- posts
-|   |-- projects
-|-- about.toml
-|-- blog.toml
-|-- softskills.toml
-|-- doing.toml
-|-- projects.toml
-|-- resume.toml
-|-- social.toml
-|-- technologies.toml
+npm install
 ```
 
-For example, to set your contact information, edit `config/about.toml`.
+Once it's done start up a local server with:
 
-```toml
-name = "Richard hanrick"
-rol = "Flutter Developer"
-email = "richard@example.com"
-phone = "+1 (213) 352-2795"
-birthday = "June 26, 1996"
-location = "Sacramento, California, USA"
-avatar = "./path/to/my-avatar.png"
+```bash
+npm run dev
 ```
 
-> [!TIP]
-> You can upload your images directly to the `config/assets` folder or use an image server like [Imgur][imgur]. Both options are valid for customizing your portfolio. For example:
->
-> `avatar = "https://i.imgur.com/H5gx7JF.png"`
->
-> `avatar = "./config/assets/avatars/my-avatar.png"`
+To view the components storybook:
 
-### Step 5: Enjoy 😉
+```bash
+npm run dev:storybook
+```
 
-Now you can visit your portfolio at `https://your_github_username.github.io`
+## Deployment
 
-Your personal portfolio will be built and updated automatically whenever any changes occur in the configuration files.
+I've set up the site using Cloudflare for hosting. Deploy the site to Cloudflare Pages:
 
-> [!NOTE]
-> If you like my work and want to show some ❤️, please consider giving a ⭐️ to this Repository.
+```bash
+npm run deploy
+```
 
-## Screenshots
+## Permissions
 
-![Desktop Demo][desktop-screenshot]
-![Mobile Demo][mobile-screenshot]
+I'm cool with anyone using the code or parts of the code for their own site, it is open source so people can learn from it and adapt it. However, I would encourage you to modify the theme and components it to make it your own. If you are using the site's design largely unmodified, I'd appreciate being credited as the designer of the website.
 
-## Contribute
+I do not give permission to present any of my projects as your own (this is being actively used as my portfolio site and these are my real projects I've worked on).
 
-Contributions are welcome.
+## FAQs
 
-## Facing any Issue?
+<details>
+  <summary>How do I change the color on the <code>DisplacementSphere</code> (blobby rotating thing in the background).</summary>
+  
+  You'll need to edit the fragment shader. [Check out this issue for more details](https://github.com/HamishMW/portfolio/issues/19#issuecomment-870996615).
+</details>
 
-Feel free to open an [Issue][issue] :)
-
-## Contact
-
-If you want to contact me you can reach me at [Discord][discord].
-
-## Credits
-
-This project is based on [vcard portfolio][vcard]. The main focus of this project is adding new features and make it accessible to everyone.
-
-## License
-
-MIT
-
-[vcard]: https://github.com/codewithsadee/vcard-personal-portfolio
-[devfolio]: https://ivansaul.github.io/personal-portfolio
-[demo]: https://raw.githubusercontent.com/ivansaul/demos/master/python/personal-portfolio-demo.gif
-[discord]: https://discord.com/users/744755977684779038
-[issue]: https://github.com/ivansaul/personal-portfolio/issues
-[github-stars]: https://img.shields.io/github/stars/ivansaul/personal-portfolio?style=social
-[github-forks]: https://img.shields.io/github/forks/ivansaul/personal-portfolio?style=social
-[desktop-screenshot]: https://i.imgur.com/xKkMSwR.png
-[mobile-screenshot]: https://i.imgur.com/G1A1nBu.png
-[imgur]: https://imgur.com
+<details>
+  <summary>How do I get the contact form to work?</summary>
+  
+  To get the contact form working create an AWS account and set up SES (Simple Email service). Then plug in your details into `.dev.vars.example` and rename it to `.dev.vars`. You'll also need to add these as enviroment variables in the Cloudflare dashboard for it to work in production. Or if you don't mind sending through gmail use [nodemailer](https://nodemailer.com/) instead.
+</details>
